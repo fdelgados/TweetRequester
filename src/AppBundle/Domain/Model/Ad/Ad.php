@@ -4,7 +4,7 @@ namespace AppBundle\Domain\Model\Ad;
 
 class Ad
 {
-    /** @var  AdId */
+    /** @var  TweetId */
     private $id;
 
     /** @var AdTitle */
@@ -17,7 +17,7 @@ class Ad
     private $publicationDate;
 
     public function __construct(
-        AdId $id,
+        TweetId $id,
         AdTitle $title,
         AdDescription $description,
         \DateTimeImmutable $publicationDate
@@ -29,7 +29,7 @@ class Ad
     }
 
     /**
-     * @return AdId
+     * @return TweetId
      */
     public function id()
     {

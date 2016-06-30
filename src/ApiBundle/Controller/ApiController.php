@@ -1,6 +1,6 @@
 <?php
 
-namespace TweetRequesterApiBundle\Controller;
+namespace ApiBundle\Controller;
 
 use FOS\RestBundle\FOSRestBundle;
 

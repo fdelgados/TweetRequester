@@ -1,5 +1,5 @@
 tweet_requester_api:
-    resource: "@TweetRequesterApiBundle/Resources/config/routing.yml"
+    resource: "@ApiBundle/Resources/config/routing.yml"
     prefix:   /
 
 app:

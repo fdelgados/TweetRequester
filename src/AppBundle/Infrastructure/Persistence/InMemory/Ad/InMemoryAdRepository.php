@@ -2,7 +2,7 @@
 
 namespace AppBundle\Infrastructure\Persistence\InMemory\Ad;
 
-use AppBundle\Domain\Model\Ad\AdId;
+use AppBundle\Domain\Model\Ad\TweetId;
 use AppBundle\Domain\Model\Ad\Ad;
 use AppBundle\Domain\Model\Ad\AdRepository;
 
@@ -12,10 +12,10 @@ class InMemoryAdRepository implements AdRepository
     
     public function nextIdentity()
     {
-        return AdId::create();
+        return TweetId::create();
     }
 
-    public function adOfId(AdId $id)
+    public function adOfId(TweetId $id)
     {
         if (isset($this->ads[(string) $id])) {
             return $this->ads[(string) $id];

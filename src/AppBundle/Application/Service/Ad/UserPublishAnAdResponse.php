@@ -4,7 +4,7 @@ namespace AppBundle\Application\Service\Ad;
 
 use AppBundle\Application\Service\ApplicationServiceResponse;
 use AppBundle\Domain\Model\Ad\AdDescription;
-use AppBundle\Domain\Model\Ad\AdId;
+use AppBundle\Domain\Model\Ad\TweetId;
 use AppBundle\Domain\Model\Ad\AdTitle;
 
 class UserPublishAnAdResponse implements ApplicationServiceResponse
@@ -15,7 +15,7 @@ class UserPublishAnAdResponse implements ApplicationServiceResponse
     /** @var string */
     private $message;
 
-    /** @var AdId */
+    /** @var TweetId */
     private $adId;
 
     /** @var string */
@@ -27,7 +27,7 @@ class UserPublishAnAdResponse implements ApplicationServiceResponse
     public function __construct(
         $success,
         $message,
-        AdId $adId = null,
+        TweetId $adId = null,
         AdTitle $adTitle = null,
         AdDescription $adDescription = null
     ) {
@@ -39,7 +39,7 @@ class UserPublishAnAdResponse implements ApplicationServiceResponse
     }
 
     /**
-     * @return AdId
+     * @return TweetId
      */
     public function adId()
     {

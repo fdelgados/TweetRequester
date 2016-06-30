@@ -5,15 +5,16 @@ namespace AppBundle\Domain\Model\Ad;
 interface AdRepository
 {
     /**
-     * @return AdId
+     * @return TweetId
      */
     public function nextIdentity();
 
     /**
-     * @param AdId $id
-     * @return Ad
+     * @param TweetId $id
+     * 
+*@return Ad
      */
-    public function adOfId(AdId $id);
+    public function adOfId(TweetId $id);
 
     /**
      * @param Ad $anAd

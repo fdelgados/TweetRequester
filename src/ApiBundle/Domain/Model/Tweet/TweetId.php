@@ -1,10 +1,10 @@
 <?php
 
-namespace AppBundle\Domain\Model\Ad;
+namespace ApiBundle\Domain\Model\Tweet;
 
 use Rhumsaa\Uuid\Uuid;
 
-class AdId
+class TweetId
 {
     /** @var string  */
     private $id;
@@ -36,10 +36,11 @@ class AdId
     }
 
     /**
-     * @param AdId $anId
-     * @return bool
+     * @param TweetId $anId
+     *
+*@return bool
      */
-    public function equals(AdId $anId)
+    public function equals(TweetId $anId)
     {
         return $anId->id() === $this->id;
     }
