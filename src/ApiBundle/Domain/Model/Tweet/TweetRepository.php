@@ -10,4 +10,9 @@ interface TweetRepository
      * @return Tweet
      */
     public function tweetOfId($id);
+
+    /**
+     * @param Tweet $tweet
+     */
+    public function add(Tweet $tweet);
 }
