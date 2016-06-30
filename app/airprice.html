@@ -1,0 +1,2345 @@
+-RES- AirPriceTransaction -
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP:Body>
+        <air:AirPriceRsp TransactionId="A1C51D200A0759D2EC2225E7DF5AF300" ResponseTime="1807"
+                         xmlns:air="http://www.travelport.com/schema/air_v32_0"
+                         xmlns:common_v32_0="http://www.travelport.com/schema/common_v32_0">
+            <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional
+                services returned for Flight(s) [IB][4186]
+            </common_v32_0:ResponseMessage>
+            <common_v32_0:ResponseMessage Code="4400" Type="Warning" ProviderCode="1G">No Merchandising optional
+                services returned for Flight(s) [IB][4185]
+            </common_v32_0:ResponseMessage>
+            <air:AirItinerary>
+                <air:AirSegment Key="ONK8zwD9QwedTOxyixhumQ==" Group="0" Carrier="IB" FlightNumber="4186"
+                                ProviderCode="1G" Origin="BCN" Destination="JFK"
+                                DepartureTime="2016-07-01T10:00:00.000+02:00"
+                                ArrivalTime="2016-07-01T12:40:00.000-04:00" FlightTime="520" TravelTime="520"
+                                Distance="3823" ClassOfService="B" ChangeOfPlane="false"
+                                OptionalServicesIndicator="false" AvailabilitySource="S"
+                                PolledAvailabilityOption="O and D cache or polled status used with different local status"
+                                AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+                    <air:FlightDetails Key="IGySV8pGTtOFVXFeKtKwYA==" Origin="BCN" Destination="JFK"
+                                       DepartureTime="2016-07-01T10:00:00.000+02:00"
+                                       ArrivalTime="2016-07-01T12:40:00.000-04:00" FlightTime="520" TravelTime="520"
+                                       Equipment="777" OriginTerminal="1" DestinationTerminal="8">
+                        <air:InFlightServices>Movie</air:InFlightServices>
+                        <air:InFlightServices>Telephone</air:InFlightServices>
+                        <air:InFlightServices>Audio Programming</air:InFlightServices>
+                        <air:InFlightServices>Duty Free Sales</air:InFlightServices>
+                        <air:InFlightServices>Non-smoking</air:InFlightServices>
+                        <air:InFlightServices>In-Seat Power Source</air:InFlightServices>
+                    </air:FlightDetails>
+                </air:AirSegment>
+                <air:AirSegment Key="0b6qDTvOSuCt6h5l4CRABw==" Group="1" Carrier="IB" FlightNumber="4185"
+                                ProviderCode="1G" Origin="JFK" Destination="BCN"
+                                DepartureTime="2016-07-08T17:35:00.000-04:00"
+                                ArrivalTime="2016-07-09T07:15:00.000+02:00" FlightTime="460" TravelTime="460"
+                                Distance="3823" ClassOfService="N" ChangeOfPlane="false"
+                                OptionalServicesIndicator="false" AvailabilitySource="A"
+                                PolledAvailabilityOption="O and D cache or polled status used with different local status"
+                                AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+                    <air:FlightDetails Key="FcyYt5niTyGAKDVm234Aag==" Origin="JFK" Destination="BCN"
+                                       DepartureTime="2016-07-08T17:35:00.000-04:00"
+                                       ArrivalTime="2016-07-09T07:15:00.000+02:00" FlightTime="460" TravelTime="460"
+                                       Equipment="777" OriginTerminal="8" DestinationTerminal="1">
+                        <air:InFlightServices>Movie</air:InFlightServices>
+                        <air:InFlightServices>Telephone</air:InFlightServices>
+                        <air:InFlightServices>Audio Programming</air:InFlightServices>
+                        <air:InFlightServices>Duty Free Sales</air:InFlightServices>
+                        <air:InFlightServices>Non-smoking</air:InFlightServices>
+                        <air:InFlightServices>In-Seat Power Source</air:InFlightServices>
+                    </air:FlightDetails>
+                </air:AirSegment>
+            </air:AirItinerary>
+            <air:AirPriceResult>
+                <air:AirPricingSolution Key="5pw0eTdvTJCD2MN2HpMi+A==" TotalPrice="EUR1621.90" BasePrice="EUR1295.00"
+                                        ApproximateTotalPrice="EUR1621.90" ApproximateBasePrice="EUR1295.00"
+                                        Taxes="EUR310.84" Fees="EUR16.06" ApproximateTaxes="EUR310.84"
+                                        ApproximateFees="EUR16.06" QuoteDate="2016-06-30">
+                    <air:AirSegmentRef Key="ONK8zwD9QwedTOxyixhumQ=="/>
+                    <air:AirSegmentRef Key="0b6qDTvOSuCt6h5l4CRABw=="/>
+                    <air:AirPricingInfo Key="KxuHMiNATcK7dUjoHwNRdg==" TotalPrice="EUR1605.84" BasePrice="EUR1295.00"
+                                        ApproximateTotalPrice="EUR1605.84" ApproximateBasePrice="EUR1295.00"
+                                        ApproximateTaxes="EUR310.84" Taxes="EUR310.84"
+                                        LatestTicketingTime="2016-06-30T23:59:00.000+02:00" PricingMethod="Guaranteed"
+                                        IncludesVAT="false" ETicketability="Yes" PlatingCarrier="IB" ProviderCode="1G">
+                        <air:FareInfo Key="JbSEme9gTASkPn+73XnGEQ==" FareBasis="B1N0Y0C3" PassengerTypeCode="ADT"
+                                      Origin="BCN" Destination="JFK" EffectiveDate="2016-06-30T16:44:00.000+02:00"
+                                      DepartureDate="2016-07-01" Amount="EUR878.00" NotValidBefore="2016-07-01"
+                                      NotValidAfter="2016-07-01">
+                            <common_v32_0:Endorsement Value="RESTRICTIONS APPLY"/>
+                            <common_v32_0:Endorsement Value="NON-REFUNDABLE"/>
+                            <air:FareRuleKey FareInfoRef="JbSEme9gTASkPn+73XnGEQ==" ProviderCode="1G">
+                                6UUVoSldxwhMdbf8vHEB0MbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5P37WI6UjsRM3ExqSoG052opmM5arCHLDbdCCIQP10SQu0ZscBMSQ4ordQA3SvM7B3v/2qf9MqW/4zPUEvJ7NsH/ya6495C08CIbRqMTJch6v9tEaRJgF5C/YIEuJEelsNOBgiEOCLr29Gb9ca1WX9JTyB5x9tYSQLWhthMb3jlxWskHU/JD90FqVnduATZ8kACA4xcw3/+ly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA4q+cJFUBzriwNmwgE7MqQvkKkbiVOhzOwnJ09zjNj3v1OPpHXOwiAvVKkvKYG2yRLu578M2jmn9HDq7YXYx0Hk=
+                            </air:FareRuleKey>
+                            <air:Brand Key="1" BrandID="20773" Name="Economy Flexible" UpSellBrandFound="false"
+                                       Carrier="IB">
+                                <air:Title Type="External">Economy Flexible</air:Title>
+                                <air:Title Type="Short">Econ Flex</air:Title>
+                                <air:Text Type="MarketingConsumer">Do you need full flexibility for your travel plans?
+                                    Then this is the fare for you.
+
+                                    &#8226; Spacious 79-81cm space between rows.
+                                    &#8226; 9 inch personal touch screen (A300 and new A340 600 aircraft).
+                                    &#8226; Universal power adaptor (A300 and new A340 600 aircraft).
+                                    &#8226; USB station to charge your device and listen to and display your own content
+                                    (A300 and new A340 600 aircraft).
+                                    &#8226; Carry on one bag + one other small item such as camera bag or lap top case.
+                                    &#8226; Check in two bags max 23kg.
+                                    &#8226; Pre select your preferred seat on board, including extra legroom seats.
+                                    &#8226; Complimentary meals and drinks on board.
+                                    &#8226; Earn Avios miles.
+
+
+                                    If the flight will be operated by another airline then the on board product or
+                                    service might differ.
+                                </air:Text>
+                                <air:Text Type="Upsell">Upgrade to Economy Flexible for free of charge changes to
+                                    reservation
+                                </air:Text>
+                                <air:Text Type="MarketingAgent">Do you need full flexibility for your travel plans? Then
+                                    this is the fare for you.
+
+                                    &#8226; Spacious 79-81cm space between rows.
+                                    &#8226; 9 inch personal touch screen (A300 and new A340 600 aircraft).
+                                    &#8226; Universal power adaptor (A300 and new A340 600 aircraft).
+                                    &#8226; USB station to charge your device and listen to and display your own content
+                                    (A300 and new A340 600 aircraft).
+                                    &#8226; Carry on one bag + one other small item such as camera bag or lap top case.
+                                    &#8226; Check in two bags max 23kg.
+                                    &#8226; Pre select your preferred seat on board, including extra legroom seats.
+                                    &#8226; Complimentary meals and drinks on board.
+                                    &#8226; Earn Avios miles.
+
+
+                                    If the flight will be operated by another airline then the on board product or
+                                    service might differ.
+                                </air:Text>
+                                <air:Text Type="Strapline">For if you need flexibility to change your booking</air:Text>
+                                <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="149">
+                                    https://merchandisingmanagement.travelport.com/documents/10431/14493/IB%20-%20Economy%20long%20haul%20new%20product%204.JPG
+                                </air:ImageLocation>
+                                <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="149">
+                                    https://merchandisingmanagement.travelport.com/documents/10431/14493/IB%20-%20Economy%20long%20haul%20new%20product%204.JPG
+                                </air:ImageLocation>
+                                <air:OptionalServices>
+                                    <air:OptionalService Type="RuleOverride" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="8nIFt/KvS0+VrhQO/ASREg==" SecondaryType="33"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Refunds</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Cancelling your reservation</air:Text>
+                                        <air:Text Type="MarketingAgent">At Iberia we understand that from time to time
+                                            you may wish to cancel your reservation.
+
+                                            The amount you will receive in refund will depend on the route and class
+                                            booked.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">At Iberia we understand that from time to
+                                            time you may wish to cancel your reservation.
+
+                                            The amount you will receive in refund will depend on the route and class
+                                            booked.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="PreReservedSeatAssignment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="MVfp2hZWRuGcrXYlGt1CyA=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Advance seat reservation
+                                            </common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Pre select your preferred seat in advance</air:Text>
+                                        <air:Text Type="MarketingAgent">Do you prefer a window, aisle, or just seats
+                                            together?
+
+                                            Pre select your preferred choice in advance.
+
+                                            Our Economy XL seats provide you with more space and comfort during your
+                                            flight, allowing you a more relaxed journey. These seats are located at the
+                                            aircraft emergency exits, so in order to be able to occupy them you must be
+                                            capable of working with the crew in emergency situations and meet a number
+                                            of particular requirements.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Do you prefer a window, aisle, or just seats
+                                            together?
+
+                                            Pre select your preferred choice in advance.
+
+                                            Our Economy XL seats provide you with more space and comfort during your
+                                            flight, allowing you a more relaxed journey. These seats are located at the
+                                            aircraft emergency exits, so in order to be able to occupy them you must be
+                                            capable of working with the crew in emergency situations and meet a number
+                                            of particular requirements.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="Baggage" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="oX+z3drFS5W7o5y4UEG7oA=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Checked baggage</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20checked%20bags%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20checked%20bags%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Check in your bags for extra convenience</air:Text>
+                                        <air:Text Type="MarketingAgent">Complimentary checked baggage allowances are as
+                                            follows:
+
+                                            1) For long haul routes:
+                                            Business Plus = 3 pieces of 32kg each.
+                                            Full Economy = 2 pieces of 32kg each.
+                                            Reduced Economy = 1 piece of 23kg.
+
+                                            2) To or from Africa or the Middle East:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Economy = 1 piece of 23kg.
+
+                                            3) On European routes:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Classic and Flexible fares = 1 piece of 23kg.
+                                            Basic fare = no checked baggage included.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Complimentary checked baggage allowances are
+                                            as follows:
+
+                                            1) For long haul routes:
+                                            Business Plus = 3 pieces of 32kg each.
+                                            Full Economy = 2 pieces of 32kg each.
+                                            Reduced Economy = 1 piece of 23kg.
+
+                                            2) To or from Africa or the Middle East:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Economy = 1 piece of 23kg.
+
+                                            3) On European routes:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Classic and Flexible fares = 1 piece of 23kg.
+                                            Basic fare = no checked baggage included.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="InFlightEntertainment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="eOGfK+TkR8aTD5z2iX1vXg==" SecondaryType="HS"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Noise cancelling headphones
+                                            </common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Headphones%20-%2060x60.png"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Headphones%20-%2060x60.png"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Peace and quiet</air:Text>
+                                        <air:Text Type="MarketingAgent">Noise cancelling headphones are provided for
+                                            your extra peace and quiet.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Noise cancelling headphones are provided for
+                                            your extra peace and quiet.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="InFlightEntertainment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="oIgg7JreRxepHrmQFB2Vtw==" SecondaryType="IT"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>WiFi on board</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="41" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/WiFi%20-%2060x60.png"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="41" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/WiFi%20-%2060x60.png"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Flying in WiFi mode</air:Text>
+                                        <air:Text Type="MarketingAgent">A330 300 and A340 600s
+                                            &#8226; WiFi Network: OnAir
+                                            &#8226; Prices (from 1st April):
+                                            4MB-4.95$/10MB-9.95$/25MB-19.95$/45MB-34.95$
+                                            &#8226; Complimentary WiFi: 4MB in Business Class
+
+
+                                            A330 200
+                                            &#8226; WiFi Network: Iberia WiFi
+                                            &#8226; Prices: 1hour-8.99&#8364;/4 hours-24.99&#8364;/Full Flight: 29.99&#8364;
+                                            &#8226; Complimentary WiFi: 30 min in Business Class
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">A330 300 and A340 600s
+                                            &#8226; WiFi Network: OnAir
+                                            &#8226; Prices (from 1st April):
+                                            4MB-4.95$/10MB-9.95$/25MB-19.95$/45MB-34.95$
+                                            &#8226; Complimentary WiFi: 4MB in Business Class
+
+
+                                            A330 200
+                                            &#8226; WiFi Network: Iberia WiFi
+                                            &#8226; Prices: 1hour-8.99&#8364;/4 hours-24.99&#8364;/Full Flight: 29.99&#8364;
+                                            &#8226; Complimentary WiFi: 30 min in Business Class
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="Baggage" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="XgnuIVqBT3eTfIj5VN92Ag==" SecondaryType="XS"
+                                                         Chargeable="Available for a charge">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Additional bag in hold</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Xbags%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Xbags%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Extra baggage as required</air:Text>
+                                        <air:Text Type="MarketingAgent">Additional checked baggage is purchaseable
+                                            either in advance or at the airport. Extra baggage booked in advance is
+                                            usually available at a discount.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Additional checked baggage is purchaseable
+                                            either in advance or at the airport. Extra baggage booked in advance is
+                                            usually available at a discount.
+                                        </air:Text>
+                                        <air:PriceRange DefaultCurrency="true" StartPrice="EUR128.000"/>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="MealOrBeverage"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="ST+XU1wDSNqG8dQLTMRVJQ=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>On board meals</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20meals%20long%20haul%20Eco%201%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20meals%20long%20haul%20Eco%201%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">On board catering</air:Text>
+                                        <air:Text Type="MarketingAgent">A practical and healthy gastronomic offer, with
+                                            seasonal ingredients designed for the traveller&#8217;s palate. Always with
+                                            two options to choose in Economy Class and three options en Business Plus,
+                                            from and, of course, enjoy.
+
+                                            Plus you can match our dishes perfectly with exquisite wines from Spain&#8217;s
+                                            most important wineries.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">A practical and healthy gastronomic offer,
+                                            with seasonal ingredients designed for the traveller&#8217;s palate. Always
+                                            with two options to choose in Economy Class and three options en Business
+                                            Plus, from and, of course, enjoy.
+
+                                            Plus you can match our dishes perfectly with exquisite wines from Spain&#8217;s
+                                            most important wineries.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="TravelServices"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="od7u/jxRSUycWRjUHdKVYQ==" SecondaryType="SY"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Priority check in, fast track, priority board
+                                            </common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20fast%20track%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20fast%20track%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Beat the queues at the airport</air:Text>
+                                        <air:Text Type="MarketingAgent">Passengers travelling in Iberia Business, Iberia
+                                            Singular and Iberia Plus Infinite, Platinum and Gold customers can beat the
+                                            queues at the airport by checking in at a separate exclusive zone, using the
+                                            fast lanes through security, and boarding the aircraft with priority.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Passengers travelling in Iberia Business,
+                                            Iberia Singular and Iberia Plus Infinite, Platinum and Gold customers can
+                                            beat the queues at the airport by checking in at a separate exclusive zone,
+                                            using the fast lanes through security, and boarding the aircraft with
+                                            priority.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="RuleOverride" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="aMI6lHIYQymCQaMpqOqLKQ==" SecondaryType="31"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Rebooking</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="58" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Call%20centre%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="58" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Call%20centre%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Making changes to your reservation</air:Text>
+                                        <air:Text Type="MarketingAgent">At Iberia we understand that from time to time
+                                            you may wish to amend your reservation.
+
+                                            The amount you will need to pay will depend on the route and class booked.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">At Iberia we understand that from time to
+                                            time you may wish to amend your reservation.
+
+                                            The amount you will need to pay will depend on the route and class booked.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="Baggage" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="yYOtQK9YTqOuZTIQp+P1LA==" SecondaryType="CY"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Hand baggage</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20hand%20bags%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20hand%20bags%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Taking bags on board</air:Text>
+                                        <air:Text Type="MarketingAgent">Carry on bags should fall within the maximum
+                                            standard measurements of 56x45x25 cm. So you can carry it with you in the
+                                            cabin during the flight.
+
+                                            You can also carry with you a personal item such a handbag, laptop or
+                                            camera.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Carry on bags should fall within the maximum
+                                            standard measurements of 56x45x25 cm. So you can carry it with you in the
+                                            cabin during the flight.
+
+                                            You can also carry with you a personal item such a handbag, laptop or
+                                            camera.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="Lounge" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         ServiceSubCode="0BX" Key="HgM+JSIqSV+uwHFn/bPCUQ=="
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Lounge access</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="54" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Drink%20-%208%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="54" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Drink%20-%208%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Merchandising"/>
+                                        <air:Text Type="Strapline">Somewhere quiet to work or relax</air:Text>
+                                        <air:Text Type="MarketingAgent">The place to relax and get your strength back,
+                                            your area equipped so you can continue to work, hold meetings or, if you
+                                            prefer, enjoy fine dining.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">The place to relax and get your strength
+                                            back, your area equipped so you can continue to work, hold meetings or, if
+                                            you prefer, enjoy fine dining.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="FrequentFlyer" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="l+egOqrFT1yQtCbI3qdayQ==" SecondaryType="MG"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Earn Avios</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Earn and save</air:Text>
+                                        <air:Text Type="MarketingAgent">Earn Avios miles every time you fly, then spend
+                                            them on a variety of awards. Refer to Avios website for further information.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Earn Avios miles every time you fly, then
+                                            spend them on a variety of awards. Refer to Avios website for further
+                                            information.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="InFlightEntertainment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="LQPVwjBGQbWA8iJ8Imcb0Q=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>In flight entertainment</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Economy%20long%20haul%20new%20product%205%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Economy%20long%20haul%20new%20product%205%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Your leisure options on the aircraft</air:Text>
+                                        <air:Text Type="MarketingAgent">Economy - We have a wide range of latest-release
+                                            films, contemporary cinema and movie classics dubbed into Spanish and
+                                            English for flights of over 7 hours.
+
+                                            Business - Customise your in-flight entertainment by choosing from a wide
+                                            selection of film, TV and music genres in different languages covering a
+                                            diversity of genres from comedy, drama and cartoons through to action and
+                                            suspense, as well as Spanish cinema.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Economy - We have a wide range of
+                                            latest-release films, contemporary cinema and movie classics dubbed into
+                                            Spanish and English for flights of over 7 hours.
+
+                                            Business - Customise your in-flight entertainment by choosing from a wide
+                                            selection of film, TV and music genres in different languages covering a
+                                            diversity of genres from comedy, drama and cartoons through to action and
+                                            suspense, as well as Spanish cinema.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="GroundTransportation"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="CHh/Mvf0Qiyc8xm7/6F45g==" SecondaryType="LI"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Chauffeur transfer</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Chauffeur%20transfer%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Chauffeur%20transfer%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Your added extra way to get to and from the airport
+                                        </air:Text>
+                                        <air:Text Type="MarketingAgent">A driver will pick you up from your home, hotel
+                                            or office in a luxury car to take you to the airport, or vice versa, for
+                                            free (passengers on long haul flights operated by Iberia with full fare
+                                            tickets in Business Plus).
+
+                                            This service is available at Madrid, Barcelona, Santiago de Chile, Buenos
+                                            Aires (Argentina), Mexico City (Mexico) and Sao Paulo (Brazil).
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">A driver will pick you up from your home,
+                                            hotel or office in a luxury car to take you to the airport, or vice versa,
+                                            for free (passengers on long haul flights operated by Iberia with full fare
+                                            tickets in Business Plus).
+
+                                            This service is available at Madrid, Barcelona, Santiago de Chile, Buenos
+                                            Aires (Argentina), Mexico City (Mexico) and Sao Paulo (Brazil).
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="FrequentFlyer" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="sjdKtuLjSyO7IrPpqtCt6w=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Upgradeable fare</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Upgrade your fare using miles</air:Text>
+                                        <air:Text Type="MarketingAgent">Fares in these classes are upgradeable using
+                                            Avios points.
+
+                                            Refer to Avios website for further details.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Fares in these classes are upgradeable using
+                                            Avios points.
+
+                                            Refer to Avios website for further details.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="PreReservedSeatAssignment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="8qBqpAUiQb+eoV++tQCBIA==" SecondaryType="EA"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Business Class flat bed</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Business%20Class%20seat%20long%20haul%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Business%20Class%20seat%20long%20haul%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">A bedroom in the sky</air:Text>
+                                        <air:Text Type="MarketingAgent">Around 90% of our long haul aircraft now have
+                                            our new lie flat bed in Business Class:
+
+                                            &#8226; 200 cm long
+                                            &#8226; 180&#186; bed
+                                            &#8226; Large private space.
+                                            &#8226; Seat separator for central rows
+                                            &#8226; 15.4"" or 16"" personal touch screen.
+                                            &#8226; Adjustable headrest
+                                            &#8226; Adjustable back and shoulder pillow with massage function
+                                            &#8226; Universal power adaptor (EU, USA, UK).
+                                            &#8226; USB connector to load, listen to and display your own content.
+                                            &#8226; The right lighting for each moment.
+                                            &#8226; Personal spaces within hands reach.
+                                            &#8226; Cocktail table and swivel desk so you can get up at any time.
+                                            &#8226; On board telephone and SMS and email application.
+                                            ----------------------
+                                            On board older long haul aircraft wide, spacious Business Class seats are
+                                            available.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Around 90% of our long haul aircraft now have
+                                            our new lie flat bed in Business Class:
+
+                                            &#8226; 200 cm long
+                                            &#8226; 180&#186; bed
+                                            &#8226; Large private space.
+                                            &#8226; Seat separator for central rows
+                                            &#8226; 15.4"" or 16"" personal touch screen.
+                                            &#8226; Adjustable headrest
+                                            &#8226; Adjustable back and shoulder pillow with massage function
+                                            &#8226; Universal power adaptor (EU, USA, UK).
+                                            &#8226; USB connector to load, listen to and display your own content.
+                                            &#8226; The right lighting for each moment.
+                                            &#8226; Personal spaces within hands reach.
+                                            &#8226; Cocktail table and swivel desk so you can get up at any time.
+                                            &#8226; On board telephone and SMS and email application.
+                                            ----------------------
+                                            On board older long haul aircraft wide, spacious Business Class seats are
+                                            available.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                </air:OptionalServices>
+                            </air:Brand>
+                        </air:FareInfo>
+                        <air:FareInfo Key="S7mhqlOOTzO8dSUmhVMghw==" FareBasis="NHW0S0C1" PassengerTypeCode="ADT"
+                                      Origin="JFK" Destination="BCN" EffectiveDate="2016-06-30T16:44:00.000+02:00"
+                                      DepartureDate="2016-07-08" Amount="EUR417.00" NotValidBefore="2016-07-08"
+                                      NotValidAfter="2016-07-08">
+                            <common_v32_0:Endorsement Value="RESTRICTIONS APPLY"/>
+                            <common_v32_0:Endorsement Value="NON-REFUNDABLE"/>
+                            <air:FareRuleKey FareInfoRef="S7mhqlOOTzO8dSUmhVMghw==" ProviderCode="1G">
+                                6UUVoSldxwhMdbf8vHEB0MbKj3F8T9EyxsqPcXxP0TIjSPOlaHfQe5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5P37WI6UjsRM3ExqSoG0523KcJwsul9gp7Oen6Lll2883f1UwCbb2UordQA3SvM7HDoHxudj/JMtjmQOq0MY7g6pKf+YKK+/8CIbRqMTJch6v9tEaRJgF5C/YIEuJEelsNOBgiEOCLr29Gb9ca1WX+W/LcvQUQwuALWhthMb3jl9/iqt+hu/n23TFMd3QuERkACA4xcw3/+ly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA4q+cJFUBzriwNmwgE7MqQvkKkbiVOhzOwnJ09zjNj3v1OPpHXOwiAvVKkvKYG2yRLu578M2jmn9HDq7YXYx0Hk=
+                            </air:FareRuleKey>
+                            <air:Brand Key="2" BrandID="20769" Name="Economy Basic" UpSellBrandFound="false"
+                                       Carrier="IB">
+                                <air:Title Type="External">Economy Basic</air:Title>
+                                <air:Title Type="Short">Econ Basic</air:Title>
+                                <air:Text Type="MarketingConsumer">Economy Basic fares suit those looking for the best
+                                    deals.
+
+                                    &#8226; Spacious 79-81cm space between rows.
+                                    &#8226; 9 inch personal touch screen (A300 and new A340 600 aircraft).
+                                    &#8226; Universal power adaptor (A300 and new A340 600 aircraft).
+                                    &#8226; USB station to charge your device and listen to and display your own content
+                                    (A300 and new A340 600 aircraft).
+                                    &#8226; Carry on one bag + one other small item such as camera bag or lap top case.
+                                    &#8226; Check in one bag max 23kg.
+                                    &#8226; Pre select your preferred seat for an additional fee.
+                                    &#8226; Complimentary meals and drinks on board.
+                                    &#8226; Earn Avios miles.
+
+
+                                    If the flight will be operated by another airline then the on board product or
+                                    service might differ.
+                                </air:Text>
+                                <air:Text Type="MarketingAgent">Economy Basic fares suit those looking for the best
+                                    deals.
+
+                                    &#8226; Spacious 79-81cm space between rows.
+                                    &#8226; 9 inch personal touch screen (A300 and new A340 600 aircraft).
+                                    &#8226; Universal power adaptor (A300 and new A340 600 aircraft).
+                                    &#8226; USB station to charge your device and listen to and display your own content
+                                    (A300 and new A340 600 aircraft).
+                                    &#8226; Carry on one bag + one other small item such as camera bag or lap top case.
+                                    &#8226; Check in one bag max 23kg.
+                                    &#8226; Pre select your preferred seat for an additional fee.
+                                    &#8226; Complimentary meals and drinks on board.
+                                    &#8226; Earn Avios miles.
+
+
+                                    If the flight will be operated by another airline then the on board product or
+                                    service might differ.
+                                </air:Text>
+                                <air:Text Type="Strapline">The most affordable class for all</air:Text>
+                                <air:ImageLocation Type="Agent" ImageWidth="149" ImageHeight="150">
+                                    https://merchandisingmanagement.travelport.com/documents/10431/14493/IB%20-%20Economy%20long%20haul%20new%20product%206b%20-%20150x150.jpg
+                                </air:ImageLocation>
+                                <air:ImageLocation Type="Consumer" ImageWidth="149" ImageHeight="150">
+                                    https://merchandisingmanagement.travelport.com/documents/10431/14493/IB%20-%20Economy%20long%20haul%20new%20product%206b%20-%20150x150.jpg
+                                </air:ImageLocation>
+                                <air:OptionalServices>
+                                    <air:OptionalService Type="Baggage" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="7+zO0tKxRV2K5JzWQVG3/w=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Checked baggage</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20checked%20bags%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20checked%20bags%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Check in your bags for extra convenience</air:Text>
+                                        <air:Text Type="MarketingAgent">Complimentary checked baggage allowances are as
+                                            follows:
+
+                                            1) For long haul routes:
+                                            Business Plus = 3 pieces of 32kg each.
+                                            Full Economy = 2 pieces of 32kg each.
+                                            Reduced Economy = 1 piece of 23kg.
+
+                                            2) To or from Africa or the Middle East:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Economy = 1 piece of 23kg.
+
+                                            3) On European routes:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Classic and Flexible fares = 1 piece of 23kg.
+                                            Basic fare = no checked baggage included.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Complimentary checked baggage allowances are
+                                            as follows:
+
+                                            1) For long haul routes:
+                                            Business Plus = 3 pieces of 32kg each.
+                                            Full Economy = 2 pieces of 32kg each.
+                                            Reduced Economy = 1 piece of 23kg.
+
+                                            2) To or from Africa or the Middle East:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Economy = 1 piece of 23kg.
+
+                                            3) On European routes:
+                                            Business Class = 2 pieces of 32kg each.
+                                            Classic and Flexible fares = 1 piece of 23kg.
+                                            Basic fare = no checked baggage included.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="InFlightEntertainment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="JXHR2ZYlTCqkqiAfq2NkOA==" SecondaryType="HS"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Noise cancelling headphones
+                                            </common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Headphones%20-%2060x60.png"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Headphones%20-%2060x60.png"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Peace and quiet</air:Text>
+                                        <air:Text Type="MarketingAgent">Noise cancelling headphones are provided for
+                                            your extra peace and quiet.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Noise cancelling headphones are provided for
+                                            your extra peace and quiet.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="InFlightEntertainment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="OK5Gq+ibSd6XuLqtIinaDw==" SecondaryType="IT"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>WiFi on board</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="41" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/WiFi%20-%2060x60.png"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="41" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/WiFi%20-%2060x60.png"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Flying in WiFi mode</air:Text>
+                                        <air:Text Type="MarketingAgent">A330 300 and A340 600s
+                                            &#8226; WiFi Network: OnAir
+                                            &#8226; Prices (from 1st April):
+                                            4MB-4.95$/10MB-9.95$/25MB-19.95$/45MB-34.95$
+                                            &#8226; Complimentary WiFi: 4MB in Business Class
+
+
+                                            A330 200
+                                            &#8226; WiFi Network: Iberia WiFi
+                                            &#8226; Prices: 1hour-8.99&#8364;/4 hours-24.99&#8364;/Full Flight: 29.99&#8364;
+                                            &#8226; Complimentary WiFi: 30 min in Business Class
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">A330 300 and A340 600s
+                                            &#8226; WiFi Network: OnAir
+                                            &#8226; Prices (from 1st April):
+                                            4MB-4.95$/10MB-9.95$/25MB-19.95$/45MB-34.95$
+                                            &#8226; Complimentary WiFi: 4MB in Business Class
+
+
+                                            A330 200
+                                            &#8226; WiFi Network: Iberia WiFi
+                                            &#8226; Prices: 1hour-8.99&#8364;/4 hours-24.99&#8364;/Full Flight: 29.99&#8364;
+                                            &#8226; Complimentary WiFi: 30 min in Business Class
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="Baggage" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="0vlSdWHLT0mY9htRW63n9g==" SecondaryType="XS"
+                                                         Chargeable="Available for a charge">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Additional bag in hold</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Xbags%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Xbags%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Extra baggage as required</air:Text>
+                                        <air:Text Type="MarketingAgent">Additional checked baggage is purchaseable
+                                            either in advance or at the airport. Extra baggage booked in advance is
+                                            usually available at a discount.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Additional checked baggage is purchaseable
+                                            either in advance or at the airport. Extra baggage booked in advance is
+                                            usually available at a discount.
+                                        </air:Text>
+                                        <air:PriceRange DefaultCurrency="true" StartPrice="EUR64.000"/>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="MealOrBeverage"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="P82NIOgAQoenYp1eGxpEqA=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>On board meals</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20meals%20long%20haul%20Eco%201%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20meals%20long%20haul%20Eco%201%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">On board catering</air:Text>
+                                        <air:Text Type="MarketingAgent">A practical and healthy gastronomic offer, with
+                                            seasonal ingredients designed for the traveller&#8217;s palate. Always with
+                                            two options to choose in Economy Class and three options en Business Plus,
+                                            from and, of course, enjoy.
+
+                                            Plus you can match our dishes perfectly with exquisite wines from Spain&#8217;s
+                                            most important wineries.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">A practical and healthy gastronomic offer,
+                                            with seasonal ingredients designed for the traveller&#8217;s palate. Always
+                                            with two options to choose in Economy Class and three options en Business
+                                            Plus, from and, of course, enjoy.
+
+                                            Plus you can match our dishes perfectly with exquisite wines from Spain&#8217;s
+                                            most important wineries.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="TravelServices"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="ghaS91qNTliAk3RY6q2VtA==" SecondaryType="SY"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Priority check in, fast track, priority board
+                                            </common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20fast%20track%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20fast%20track%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Beat the queues at the airport</air:Text>
+                                        <air:Text Type="MarketingAgent">Passengers travelling in Iberia Business, Iberia
+                                            Singular and Iberia Plus Infinite, Platinum and Gold customers can beat the
+                                            queues at the airport by checking in at a separate exclusive zone, using the
+                                            fast lanes through security, and boarding the aircraft with priority.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Passengers travelling in Iberia Business,
+                                            Iberia Singular and Iberia Plus Infinite, Platinum and Gold customers can
+                                            beat the queues at the airport by checking in at a separate exclusive zone,
+                                            using the fast lanes through security, and boarding the aircraft with
+                                            priority.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="RuleOverride" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="e46kBvOORHCnG3pEbH57IA==" SecondaryType="31"
+                                                         Chargeable="Available for a charge">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Rebooking</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="58" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Call%20centre%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="58" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Call%20centre%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Making changes to your reservation</air:Text>
+                                        <air:Text Type="MarketingAgent">At Iberia we understand that from time to time
+                                            you may wish to amend your reservation.
+
+                                            The amount you will need to pay will depend on the route and class booked.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">At Iberia we understand that from time to
+                                            time you may wish to amend your reservation.
+
+                                            The amount you will need to pay will depend on the route and class booked.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="Baggage" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="h9r9D4TEQeau3T4l8Yic8w==" SecondaryType="CY"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Hand baggage</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20hand%20bags%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20hand%20bags%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Taking bags on board</air:Text>
+                                        <air:Text Type="MarketingAgent">Carry on bags should fall within the maximum
+                                            standard measurements of 56x45x25 cm. So you can carry it with you in the
+                                            cabin during the flight.
+
+                                            You can also carry with you a personal item such a handbag, laptop or
+                                            camera.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Carry on bags should fall within the maximum
+                                            standard measurements of 56x45x25 cm. So you can carry it with you in the
+                                            cabin during the flight.
+
+                                            You can also carry with you a personal item such a handbag, laptop or
+                                            camera.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="Lounge" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         ServiceSubCode="0BX" Key="Z1HubJyvRtaauCzwgxYOig=="
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Lounge access</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="54" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Drink%20-%208%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="54" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Drink%20-%208%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Merchandising"/>
+                                        <air:Text Type="Strapline">Somewhere quiet to work or relax</air:Text>
+                                        <air:Text Type="MarketingAgent">The place to relax and get your strength back,
+                                            your area equipped so you can continue to work, hold meetings or, if you
+                                            prefer, enjoy fine dining.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">The place to relax and get your strength
+                                            back, your area equipped so you can continue to work, hold meetings or, if
+                                            you prefer, enjoy fine dining.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="FrequentFlyer" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="39nXEcYgRXGILso0dCJqnw==" SecondaryType="MG"
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Earn Avios</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Earn and save</air:Text>
+                                        <air:Text Type="MarketingAgent">Earn Avios miles every time you fly, then spend
+                                            them on a variety of awards. Refer to Avios website for further information.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Earn Avios miles every time you fly, then
+                                            spend them on a variety of awards. Refer to Avios website for further
+                                            information.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="InFlightEntertainment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="U09hn/DQSLGoHl+QyL9a8g=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>In flight entertainment</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Economy%20long%20haul%20new%20product%205%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Economy%20long%20haul%20new%20product%205%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Your leisure options on the aircraft</air:Text>
+                                        <air:Text Type="MarketingAgent">Economy - We have a wide range of latest-release
+                                            films, contemporary cinema and movie classics dubbed into Spanish and
+                                            English for flights of over 7 hours.
+
+                                            Business - Customise your in-flight entertainment by choosing from a wide
+                                            selection of film, TV and music genres in different languages covering a
+                                            diversity of genres from comedy, drama and cartoons through to action and
+                                            suspense, as well as Spanish cinema.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Economy - We have a wide range of
+                                            latest-release films, contemporary cinema and movie classics dubbed into
+                                            Spanish and English for flights of over 7 hours.
+
+                                            Business - Customise your in-flight entertainment by choosing from a wide
+                                            selection of film, TV and music genres in different languages covering a
+                                            diversity of genres from comedy, drama and cartoons through to action and
+                                            suspense, as well as Spanish cinema.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="GroundTransportation"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="j7rk2ObiSiGIfWwVWwXT7g==" SecondaryType="LI"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Chauffeur transfer</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Chauffeur%20transfer%20-%2060x60.JPG"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Chauffeur%20transfer%20-%2060x60.JPG"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Your added extra way to get to and from the airport
+                                        </air:Text>
+                                        <air:Text Type="MarketingAgent">A driver will pick you up from your home, hotel
+                                            or office in a luxury car to take you to the airport, or vice versa, for
+                                            free (passengers on long haul flights operated by Iberia with full fare
+                                            tickets in Business Plus).
+
+                                            This service is available at Madrid, Barcelona, Santiago de Chile, Buenos
+                                            Aires (Argentina), Mexico City (Mexico) and Sao Paulo (Brazil).
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">A driver will pick you up from your home,
+                                            hotel or office in a luxury car to take you to the airport, or vice versa,
+                                            for free (passengers on long haul flights operated by Iberia with full fare
+                                            tickets in Business Plus).
+
+                                            This service is available at Madrid, Barcelona, Santiago de Chile, Buenos
+                                            Aires (Argentina), Mexico City (Mexico) and Sao Paulo (Brazil).
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="FrequentFlyer" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="HQL3eSr5Rr+Df+xIxMQhMQ=="
+                                                         Chargeable="Included in the brand">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Upgradeable fare</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/Avios.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Upgrade your fare using miles</air:Text>
+                                        <air:Text Type="MarketingAgent">Fares in these classes are upgradeable using
+                                            Avios points.
+
+                                            Refer to Avios website for further details.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Fares in these classes are upgradeable using
+                                            Avios points.
+
+                                            Refer to Avios website for further details.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="PreReservedSeatAssignment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="eeW8IkDQRryD3CzqgIJ2MQ==" SecondaryType="EA"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Business Class flat bed</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Consumer" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Business%20Class%20seat%20long%20haul%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Agent" height="59" width="60"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/IB%20-%20Business%20Class%20seat%20long%20haul%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">A bedroom in the sky</air:Text>
+                                        <air:Text Type="MarketingAgent">Around 90% of our long haul aircraft now have
+                                            our new lie flat bed in Business Class:
+
+                                            &#8226; 200 cm long
+                                            &#8226; 180&#186; bed
+                                            &#8226; Large private space.
+                                            &#8226; Seat separator for central rows
+                                            &#8226; 15.4"" or 16"" personal touch screen.
+                                            &#8226; Adjustable headrest
+                                            &#8226; Adjustable back and shoulder pillow with massage function
+                                            &#8226; Universal power adaptor (EU, USA, UK).
+                                            &#8226; USB connector to load, listen to and display your own content.
+                                            &#8226; The right lighting for each moment.
+                                            &#8226; Personal spaces within hands reach.
+                                            &#8226; Cocktail table and swivel desk so you can get up at any time.
+                                            &#8226; On board telephone and SMS and email application.
+                                            ----------------------
+                                            On board older long haul aircraft wide, spacious Business Class seats are
+                                            available.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Around 90% of our long haul aircraft now have
+                                            our new lie flat bed in Business Class:
+
+                                            &#8226; 200 cm long
+                                            &#8226; 180&#186; bed
+                                            &#8226; Large private space.
+                                            &#8226; Seat separator for central rows
+                                            &#8226; 15.4"" or 16"" personal touch screen.
+                                            &#8226; Adjustable headrest
+                                            &#8226; Adjustable back and shoulder pillow with massage function
+                                            &#8226; Universal power adaptor (EU, USA, UK).
+                                            &#8226; USB connector to load, listen to and display your own content.
+                                            &#8226; The right lighting for each moment.
+                                            &#8226; Personal spaces within hands reach.
+                                            &#8226; Cocktail table and swivel desk so you can get up at any time.
+                                            &#8226; On board telephone and SMS and email application.
+                                            ----------------------
+                                            On board older long haul aircraft wide, spacious Business Class seats are
+                                            available.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="RuleOverride" CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="1IdpFb4LTTC6eKwMj615Hg==" SecondaryType="33"
+                                                         Chargeable="Not offered">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Refunds</common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Cancelling your reservation</air:Text>
+                                        <air:Text Type="MarketingAgent">At Iberia we understand that from time to time
+                                            you may wish to cancel your reservation.
+
+                                            The amount you will receive in refund will depend on the route and class
+                                            booked.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">At Iberia we understand that from time to
+                                            time you may wish to cancel your reservation.
+
+                                            The amount you will receive in refund will depend on the route and class
+                                            booked.
+                                        </air:Text>
+                                    </air:OptionalService>
+                                    <air:OptionalService Type="PreReservedSeatAssignment"
+                                                         CreateDate="2016-06-30T14:44:59.557+00:00"
+                                                         Key="UPIciJ6uQoi/kfrdAY/9og=="
+                                                         Chargeable="Available for a charge">
+                                        <common_v32_0:ServiceData AirSegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                                        <common_v32_0:ServiceInfo>
+                                            <common_v32_0:Description>Advance seat reservation
+                                            </common_v32_0:Description>
+                                            <common_v32_0:MediaItem caption="Agent" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                            <common_v32_0:MediaItem caption="Consumer" height="60" width="59"
+                                                                    url="https://merchandisingmanagement.travelport.com/documents/10431/14495/General%201%20-%2060x60.jpg"/>
+                                        </common_v32_0:ServiceInfo>
+                                        <air:EMD AssociatedItem="Flight"/>
+                                        <air:Text Type="Strapline">Pre select your preferred seat in advance</air:Text>
+                                        <air:Text Type="MarketingAgent">Do you prefer a window, aisle, or just seats
+                                            together?
+
+                                            Pre select your preferred choice in advance.
+
+                                            Our Economy XL seats provide you with more space and comfort during your
+                                            flight, allowing you a more relaxed journey. These seats are located at the
+                                            aircraft emergency exits, so in order to be able to occupy them you must be
+                                            capable of working with the crew in emergency situations and meet a number
+                                            of particular requirements.
+                                        </air:Text>
+                                        <air:Text Type="MarketingConsumer">Do you prefer a window, aisle, or just seats
+                                            together?
+
+                                            Pre select your preferred choice in advance.
+
+                                            Our Economy XL seats provide you with more space and comfort during your
+                                            flight, allowing you a more relaxed journey. These seats are located at the
+                                            aircraft emergency exits, so in order to be able to occupy them you must be
+                                            capable of working with the crew in emergency situations and meet a number
+                                            of particular requirements.
+                                        </air:Text>
+                                        <air:PriceRange DefaultCurrency="true" StartPrice="EUR33.000"/>
+                                    </air:OptionalService>
+                                </air:OptionalServices>
+                            </air:Brand>
+                        </air:FareInfo>
+                        <air:BookingInfo BookingCode="B" CabinClass="Economy" FareInfoRef="JbSEme9gTASkPn+73XnGEQ=="
+                                         SegmentRef="ONK8zwD9QwedTOxyixhumQ=="/>
+                        <air:BookingInfo BookingCode="N" CabinClass="Economy" FareInfoRef="S7mhqlOOTzO8dSUmhVMghw=="
+                                         SegmentRef="0b6qDTvOSuCt6h5l4CRABw=="/>
+                        <air:TaxInfo Category="JD" Amount="EUR18.26" Key="leGC/aPOQICSHyskxgtOIQ=="/>
+                        <air:TaxInfo Category="OG" Amount="EUR0.59" Key="HI9gyREOSziP8//tTWpfjQ=="/>
+                        <air:TaxInfo Category="QV" Amount="EUR3.71" Key="BrwfnjtpTVq44o2sQBPPEQ=="/>
+                        <air:TaxInfo Category="AY" Amount="EUR5.07" Key="E0S/gKAJTRy1Vh6Jr55kyg=="/>
+                        <air:TaxInfo Category="US" Amount="EUR32.22" Key="pJnbbwQ2TNyMMd1R6PzLfg=="/>
+                        <air:TaxInfo Category="XA" Amount="EUR3.59" Key="lKp8uPHiRQODqX/ZvkrMEQ=="/>
+                        <air:TaxInfo Category="XF" Amount="EUR4.08" Key="z3yEZGYfRye1MgB1Julzfg==">
+                            <common_v32_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+                        </air:TaxInfo>
+                        <air:TaxInfo Category="XY" Amount="EUR6.34" Key="Bz23dAyYRd2GAfZn/t+ygQ=="/>
+                        <air:TaxInfo Category="YC" Amount="EUR4.98" Key="48V+qGzKR12j0DrGLLCdEw=="/>
+                        <air:TaxInfo Category="YQ" Amount="EUR232.00" Key="YzKoxG0JRMqTxnJOy6jRrQ=="/>
+                        <air:FareCalc>BCN IB NYC 961.39B1N0Y0C3 IB BCN 456.60NHW0S0C1 NUC1417.99END ROE0.913258
+                        </air:FareCalc>
+                        <air:PassengerType Code="ADT" Age="40"/>
+                        <air:ChangePenalty>
+                            <air:Amount>EUR150.00</air:Amount>
+                        </air:ChangePenalty>
+                        <air:BaggageAllowances>
+                            <air:BaggageAllowanceInfo TravelerType="ADT" Origin="BCN" Destination="NYC" Carrier="IB">
+                                <air:URLInfo>
+                                    <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSIB.BAGG</air:URL>
+                                </air:URLInfo>
+                                <air:TextInfo>
+                                    <air:Text>1P</air:Text>
+                                    <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE
+                                        CHECKIN/FORM OF PAYMENT/MILITARY/ETC.
+                                    </air:Text>
+                                </air:TextInfo>
+                                <air:BagDetails ApplicableBags="1stChecked" BasePrice="EUR0.00"
+                                                ApproximateBasePrice="EUR0.00" TotalPrice="EUR0.00"
+                                                ApproximateTotalPrice="EUR0.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:BagDetails>
+                                <air:BagDetails ApplicableBags="2ndChecked" BasePrice="EUR75.00"
+                                                ApproximateBasePrice="EUR75.00" TotalPrice="EUR75.00"
+                                                ApproximateTotalPrice="EUR75.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>EXCESS PIECE</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:BagDetails>
+                            </air:BaggageAllowanceInfo>
+                            <air:BaggageAllowanceInfo TravelerType="ADT" Origin="NYC" Destination="BCN" Carrier="IB">
+                                <air:URLInfo>
+                                    <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSIB.BAGG</air:URL>
+                                </air:URLInfo>
+                                <air:TextInfo>
+                                    <air:Text>1P</air:Text>
+                                    <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE
+                                        CHECKIN/FORM OF PAYMENT/MILITARY/ETC.
+                                    </air:Text>
+                                </air:TextInfo>
+                                <air:BagDetails ApplicableBags="1stChecked" BasePrice="EUR0.00"
+                                                ApproximateBasePrice="EUR0.00" TotalPrice="EUR0.00"
+                                                ApproximateTotalPrice="EUR0.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:BagDetails>
+                                <air:BagDetails ApplicableBags="2ndChecked" BasePrice="EUR75.00"
+                                                ApproximateBasePrice="EUR75.00" TotalPrice="EUR75.00"
+                                                ApproximateTotalPrice="EUR75.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>EXCESS PIECE</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:BagDetails>
+                            </air:BaggageAllowanceInfo>
+                            <air:CarryOnAllowanceInfo Origin="BCN" Destination="NYC" Carrier="AA">
+                                <air:TextInfo>
+                                    <air:Text>2P</air:Text>
+                                </air:TextInfo>
+                                <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="EUR0.00"
+                                                    ApproximateBasePrice="EUR0.00" TotalPrice="EUR0.00"
+                                                    ApproximateTotalPrice="EUR0.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>UPTO45LI/115LCM</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:CarryOnDetails>
+                                <air:CarryOnDetails ApplicableCarryOnBags="2" BasePrice="USD0.00" TotalPrice="USD0.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>CARRYON HAND BAGGAGE ALLOWANCE</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:CarryOnDetails>
+                            </air:CarryOnAllowanceInfo>
+                            <air:CarryOnAllowanceInfo Origin="NYC" Destination="BCN" Carrier="AA">
+                                <air:TextInfo>
+                                    <air:Text>2P</air:Text>
+                                </air:TextInfo>
+                                <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="USD0.00" TotalPrice="USD0.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>UPTO45LI/115LCM</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:CarryOnDetails>
+                                <air:CarryOnDetails ApplicableCarryOnBags="2" BasePrice="USD0.00" TotalPrice="USD0.00">
+                                    <air:BaggageRestriction>
+                                        <air:TextInfo>
+                                            <air:Text>CARRYON HAND BAGGAGE ALLOWANCE</air:Text>
+                                        </air:TextInfo>
+                                    </air:BaggageRestriction>
+                                </air:CarryOnDetails>
+                            </air:CarryOnAllowanceInfo>
+                            <air:EmbargoInfo Origin="BCN" Destination="NYC" Carrier="AA">
+                                <air:URLInfo>
+                                    <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSAA.BAGG</air:URL>
+                                </air:URLInfo>
+                                <air:TextInfo>
+                                    <air:Text>888</air:Text>
+                                </air:TextInfo>
+                            </air:EmbargoInfo>
+                            <air:EmbargoInfo Origin="NYC" Destination="BCN" Carrier="AA">
+                                <air:URLInfo>
+                                    <air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSAA.BAGG</air:URL>
+                                </air:URLInfo>
+                                <air:TextInfo>
+                                    <air:Text>888</air:Text>
+                                </air:TextInfo>
+                            </air:EmbargoInfo>
+                        </air:BaggageAllowances>
+                    </air:AirPricingInfo>
+                    <air:FareNote Key="laxeeM73T4yMBn3/Y5qIGQ==">LAST DATE TO PURCHASE TICKET: 30JUN16</air:FareNote>
+                    <air:FareNote Key="uBpoi3BsS2SRAQZo/CxUHA==">TICKETING AGENCY 51LG</air:FareNote>
+                    <air:FareNote Key="OQWv+b9MT/+4jctZX0wC9g==">DEFAULT PLATING CARRIER IB</air:FareNote>
+                    <air:FareNote Key="XkCegH2DTk65P2oulji3ZA==">FARE HAS A PLATING CARRIER RESTRICTION</air:FareNote>
+                    <air:FareNote Key="3/pbR92LTxCl29ijryt56Q==">E-TKT REQUIRED</air:FareNote>
+                    <air:FareNote Key="yEEMuFuASCuYrdntq+1gqg==">TICKETING FEES MAY APPLY</air:FareNote>
+                    <air:FeeInfo BaseAmount="EUR16.06" Description="CC FEE" SubCode="FCA" Key="Xs/oSMiGQEaIICK/ue0ePA=="
+                                 Amount="EUR16.06" Code="OB" ProviderCode="1G" SupplierCode="IB"
+                                 PassengerTypeCode="ADT"/>
+                </air:AirPricingSolution>
+                <air:FareRule FareInfoRef="S7mhqlOOTzO8dSUmhVMghw==" RuleNumber="J002" Source="ATPCO"
+                              TariffNumber="001">
+                    <air:FareRuleLong Category="0" Type="RULE">RULE - 001/J002
+                        UNLESS OTHERWISE SPECIFIED
+                        PUBLIC FARES
+                        APPLICATION
+                        AREA
+                        THESE FARES APPLY
+                        FROM SPAIN AND CANARY ISLANDS TO NORTH AMERICA.
+                        CLASS OF SERVICE
+                        THESE FARES APPLY FOR ECONOMY CLASS SERVICE.
+                        TYPES OF TRANSPORTATION
+                        FARES GOVERNED BY THIS RULE CAN BE USED TO CREATE
+                        ONE-WAY/ROUND-TRIP/CIRCLE-TRIP/OPEN-JAW JOURNEYS.
+                        CAPACITY LIMITATIONS
+                        THE CARRIER SHALL LIMIT THE NUMBER OF PASSENGERS CARRIED
+                        ON ANY ONE FLIGHT AT FARES GOVERNED BY THIS RULE AND SUCH
+                        FARES WILL NOT NECESSARILY BE AVAILABLE ON ALL FLIGHTS.
+                        THE NUMBER OF SEATS WHICH THE CARRIER SHALL MAKE
+                        AVAILABLE ON A GIVEN FLIGHT WILL BE DETERMINED BY THE
+                        CARRIERS BEST JUDGMENT
+                        OTHER CONDITIONS
+                        THE TICKET IS INVALID FOR TRAVEL IF FLIGHT COUPONS
+                        ARE NOT USED IN SEQUENCE.
+                        ---
+                        PASSENGER EXPENSES NOT ABSORBED BY CARRIER.
+                        ---
+                        FARE DOES NOT APPLY FOR REFUND CALCULATION AFTER
+                        TRAVEL AT A HIGHER FARE.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="2" Type="RULE">FOR WEEKEND FARES
+                        PERMITTED FRI/SAT/SUN ON EACH TRANSATLANTIC SECTOR.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="3" Type="RULE">FOR -H TYPE FARES
+                        PERMITTED 18MAR 16 THROUGH 27MAR 16 OR 25JUN 16 THROUGH
+                        24AUG 16 OR 25JUN 17 THROUGH 24AUG 17 ON THE OUTBOUND
+                        TRANSATLANTIC SECTOR.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="4" Type="RULE">BETWEEN EUROPE AND NORTH AMERICA NOTE - GENERAL RULE DOES
+                        NOT
+                        APPLY
+                        THE FARE COMPONENT MUST NOT BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY A3 FLIGHT OPERATED BY A3
+                        ANY IB FLIGHT OPERATED BY A3
+                        ANY AB FLIGHT OPERATED BY AB
+                        ANY IB FLIGHT OPERATED BY AB
+                        ANY KM FLIGHT OPERATED BY KM
+                        ANY IB FLIGHT OPERATED BY KM
+                        ANY FB FLIGHT OPERATED BY FB
+                        ANY IB FLIGHT OPERATED BY FB
+                        ANY IG FLIGHT OPERATED BY IG
+                        ANY IB FLIGHT OPERATED BY IG
+                        ANY LO FLIGHT OPERATED BY LO
+                        ANY IB FLIGHT OPERATED BY LO
+                        ANY LG FLIGHT OPERATED BY LG
+                        ANY IB FLIGHT OPERATED BY LG
+                        ANY OA FLIGHT OPERATED BY OA
+                        ANY IB FLIGHT OPERATED BY OA
+                        ANY OK FLIGHT OPERATED BY OK
+                        ANY IB FLIGHT OPERATED BY OK
+                        ANY RO FLIGHT OPERATED BY RO
+                        ANY IB FLIGHT OPERATED BY RO
+                        IN COMBINATION WITH
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY AA
+                        ANY IB FLIGHT OPERATED BY AY
+                        ANY IB FLIGHT OPERATED BY BA
+                        ANY IB FLIGHT OPERATED BY VY
+                        ANY IB FLIGHT OPERATED BY US.
+                        AND
+                        THE FARE COMPONENT MUST NOT BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        AA FLIGHTS 5970 THROUGH 6017
+                        AA FLIGHTS 6018 THROUGH 6070
+                        AA FLIGHTS 6199 THROUGH 6200
+                        AA FLIGHTS 6750 THROUGH 7128
+                        AA FLIGHTS 6950 THROUGH 7969
+                        AA FLIGHTS 7219 THROUGH 7238
+                        AA FLIGHTS 7424 THROUGH 7453
+                        AA FLIGHTS 7454 THROUGH 7637
+                        AA FLIGHTS 7745 THROUGH 7823
+                        AA FLIGHTS 7833 THROUGH 7862
+                        AA FLIGHTS 7863 THROUGH 7949
+                        AA FLIGHTS 7970 THROUGH 8049
+                        AA FLIGHTS 8350 THROUGH 8399
+                        ANY AA FLIGHT OPERATED BY US
+                        AM FLIGHTS 3000 THROUGH 5999
+                        AM FLIGHTS 7000 THROUGH 9999
+                        BA FLIGHTS 0001 THROUGH 0004
+                        BA FLIGHTS 4000 THROUGH 4199
+                        BA FLIGHTS 5700 THROUGH 5999
+                        BA FLIGHTS 6100 THROUGH 6199
+                        BA FLIGHTS 7000 THROUGH 7049
+                        IB FLIGHTS 5000 THROUGH 5999
+                        IB FLIGHTS 7464 THROUGH 7466
+                        IB FLIGHT 7469
+                        ANY 2C FLIGHT
+                        ANY 2V FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN EUROPE
+                        THEN THAT TRAVEL MUST NOT BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        LO FLIGHTS 4000 THROUGH 9999
+                        RO FLIGHTS 9000 THROUGH 9999
+                        PS FLIGHTS 1000 THROUGH 9999
+                        SU FLIGHTS 0401 THROUGH 0500
+                        SU FLIGHTS 0601 THROUGH 0700
+                        SU FLIGHTS 1401 THROUGH 1700
+                        IG FLIGHTS 9000 THROUGH 9999.
+                        AND
+                        THE FARE COMPONENT MUST INCLUDE TRAVEL VIA EACH
+                        TRANSATLANTIC SECTOR BUT NOT ON
+                        ONE OR MORE OF THE FOLLOWING
+                        IB FLIGHTS 7989 THROUGH 7990.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN EUROPE
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY 9B FLIGHT OPERATED BY 2A
+                        ANY A4 FLIGHT OPERATED BY A4
+                        ANY AB FLIGHT OPERATED BY AB
+                        ANY AY FLIGHT OPERATED BY AY
+                        ANY FB FLIGHT OPERATED BY FB
+                        ANY IG FLIGHT OPERATED BY IG
+                        ANY KM FLIGHT OPERATED BY KM
+                        ANY LG FLIGHT OPERATED BY LG
+                        ANY LO FLIGHT OPERATED BY LO
+                        ANY MA FLIGHT OPERATED BY MA
+                        ANY OA FLIGHT OPERATED BY OA
+                        ANY OK FLIGHT OPERATED BY OK
+                        ANY RO FLIGHT OPERATED BY RO
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY US FLIGHT
+                        ANY NT FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN MEXICO
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY VW FLIGHT
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY US FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN THE UNITED
+                        STATES/CANADA
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY B6 FLIGHT
+                        ANY US FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL BETWEEN THE UNITED
+                        STATES/CANADA AND MEXICO
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY US FLIGHT.
+                        AND
+                        THE FARE COMPONENT MUST INCLUDE TRAVEL VIA EACH
+                        TRANSATLANTIC SECTOR ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="5" Type="RULE">FOR -W0 TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        RESERVATIONS ARE REQUIRED FOR ALL SECTORS.
+                        WHEN RESERVATIONS ARE MADE AT LEAST 4 DAYS BEFORE
+                        DEPARTURE TICKETING MUST BE COMPLETED WITHIN 3 DAYS AFTER
+                        RESERVATIONS ARE MADE.
+                        OR - RESERVATIONS FOR ALL SECTORS AND TICKETING MUST BE
+                        COMPLETED AT THE SAME TIME.
+                        NOTE -
+                        TICKET NUMBER MUST BE SHOWN IN THE PNR AND
+                        ELECTRONICALLY TRANSMITTED TO THE AIRLINE.
+                        MANUAL INCLUSION WILL NOT BE ACCEPTED.
+                        DUE TO TTL ROBOT PROCESS DIFFERENCE COULD EXIST
+                        BETWEEN THE CRS LAST TICKETING DATE AND TTL ROBOT
+                        REMARK THE INFORMATION BY SSR IN THE PNR PREVAILS.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="6" Type="RULE">FOR -S TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        TRAVEL FROM INBOUND TRANSATLANTIC SECTOR MUST COMMENCE NO
+                        EARLIER THAN THE FIRST SUN AFTER DEPARTURE OF THE OUTBOUND
+                        TRANSATLANTIC SECTOR.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="7" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        TRAVEL FROM LAST STOPOVER MUST COMMENCE NO LATER THAN 12
+                        MONTHS AFTER DEPARTURE FROM FARE ORIGIN.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="8" Type="RULE">FOR N- TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        1 STOPOVER PERMITTED IN EACH DIRECTION IN LON/MAD/HEL AT
+                        EUR 75.00 EACH.
+                        CHILD/INFANT DISCOUNTS APPLY.
+                        AND - 1 STOPOVER PERMITTED IN EACH DIRECTION IN THE UNITED
+                        STATES/MEXICO/CANADA AT EUR 300.00 EACH.
+                        CHILD/INFANT DISCOUNTS APPLY.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="9" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        2 TRANSFERS PERMITTED IN EACH DIRECTION FREE
+                        1 FREE ON AA/AY/B6/BA/IB/US ONLY IN BOS IN EACH
+                        DIRECTION
+                        2 FREE ON AA/AY/BA/IB/US ONLY IN NORTH AMERICA IN EACH
+                        DIRECTION.
+                        AND - 2 TRANSFERS PERMITTED IN EACH DIRECTION FREE
+                        2 FREE IN AUSTRIA/BELGIUM/BULGARIA/CYPRUS/CZECH
+                        REPUBLIC/DENMARK/ESTONIA/FINLAND/FRANCE/
+                        GERMANY/GREECE/HUNGARY/IRELAND/ITALY/LATVIA/
+                        LITHUANIA/LUXEMBOURG/MALTA/NETHERLANDS/NORWAY/
+                        POLAND/PORTUGAL/ROMANIA/SLOVAKIA/SLOVENIA/SPAIN
+                        AND CANARY ISLANDS/SWEDEN/SWITZERLAND/UNITED
+                        KINGDOM IN EACH DIRECTION
+                        FARE BREAK SURFACE SECTORS NOT PERMITTED AND
+                        EMBEDDED SURFACE SECTORS PERMITTED ON THE FARE
+                        COMPONENT.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="10" Type="RULE">UNLESS OTHERWISE SPECIFIED
+                        END-ON-END NOT PERMITTED. SIDE TRIPS PERMITTED.
+                        APPLICABLE ADD-ON CONSTRUCTION IS ADDRESSED IN
+                        MISCELLANEOUS PROVISIONS - CATEGORY 23.
+                        OPEN JAWS
+                        FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+                        -TO FORM DOUBLE OPEN JAWS.
+                        A MAXIMUM OF TWO INTERNATIONAL FARE COMPONENTS
+                        PERMITTED.
+                        MILEAGE OF THE OPEN SEGMENT MUST BE EQUAL/LESS THAN
+                        MILEAGE OF THE LONGEST FLOWN FARE COMPONENT.
+                        PROVIDED -
+                        WHEN THE OPEN SEGMENT OCCURS
+                        -WITHIN NORTH AMERICA OR WITHIN EUROPE
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER IB/BA/AA/
+                        AY/US IN ANY RULE IN TARIFF
+                        FBRA12P - BETWEEN AREA 1 AND AREA 2 EXCEPT US/CA
+                        FBRINPV - BETWEEN USA/CA-AREA 1/2/3
+                        IPRA - USA/CANADA-AREA 2/3 AND GUAM-AREA 2 VIA
+                        ATLANTIC
+                        IPRAI - BETWEEN THE USA/CANADA-AREA 2/3 VIA ATLANTIC
+                        IPRSAA2 - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        SAR2RPV - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        TAPVR - BETWEEN AREA 1-AREA 2/3 AND GUAM-AREA 2.
+                        OPEN JAWS
+                        FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+                        -TO FORM SINGLE OPEN JAWS.
+                        PROVIDED -
+                        COMBINATIONS ARE NOT WITH ANY FARE FOR ANY CARRIER IN
+                        ANY RULE IN TARIFF
+                        IPRWI - WITHIN THE WESTERN HEMISPHERE-INTERNATIONAL.
+                        OPEN JAWS/ROUND TRIPS/CIRCLE TRIPS
+                        FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+                        -TO FORM SINGLE OPEN JAWS.
+                        A MAXIMUM OF TWO INTERNATIONAL FARE COMPONENTS
+                        PERMITTED.
+                        MILEAGE OF THE OPEN SEGMENT MUST BE EQUAL/LESS THAN
+                        MILEAGE OF THE LONGEST FLOWN FARE COMPONENT.
+                        -TO FORM ROUND TRIPS
+                        -TO FORM CIRCLE TRIPS
+                        A MAXIMUM OF TWO INTERNATIONAL FARE COMPONENTS
+                        PERMITTED.
+                        PROVIDED -
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER BA/IB IN ANY
+                        RULE IN TARIFF
+                        FBRA12P - BETWEEN AREA 1 AND AREA 2 EXCEPT US/CA
+                        FBRINPV - BETWEEN USA/CA-AREA 1/2/3
+                        IPRA - USA/CANADA-AREA 2/3 AND GUAM-AREA 2 VIA
+                        ATLANTIC
+                        IPRAI - BETWEEN THE USA/CANADA-AREA 2/3 VIA ATLANTIC
+                        IPRSAA2 - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        SAR2RPV - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        TAPVR - BETWEEN AREA 1-AREA 2/3 AND GUAM-AREA 2.
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER AA/AY/US
+                        FROM/TO MEXICO IN ANY RULE IN TARIFF
+                        FBRA12P - BETWEEN AREA 1 AND AREA 2 EXCEPT US/CA
+                        IPRSAA2 - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        SAR2RPV - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC.
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER AA/AY/US IN
+                        ANY RULE IN TARIFF
+                        FBRINPV - BETWEEN USA/CA-AREA 1/2/3
+                        IPRA - USA/CANADA-AREA 2/3 AND GUAM-AREA 2 VIA
+                        ATLANTIC
+                        TAPVR - BETWEEN AREA 1-AREA 2/3 AND GUAM-AREA 2.
+                        NOTE - THE CITY PAIRS BELOW ARE CONSIDERED THE SAME POINT-
+                        BWI-WAS FLL-MIA OAK-SFO OAK-SJC SFO-SJC LAX-ONT
+                        LAX-BUR LAX-LGB LAX-SNA ONT-BUR ONT-LGB ONT-SNA
+                        BUR-LGB BUR-SNA LGB-SNA NYC-EWR
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="12" Type="RULE">BETWEEN AREA 1 AND AREA 2
+                        ORIGINATING AREA 2 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        ON DIRECT FLIGHTS
+                        A SURCHARGE OF EUR 100.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        ORIGINATING AREA 2 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        BUT NOT ON DIRECT FLIGHTS
+                        A SURCHARGE OF EUR 125.00 PER TRANSFER WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        ORIGINATING AREA 1 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        ON DIRECT FLIGHTS
+                        A SURCHARGE OF USD 115.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        ORIGINATING AREA 1 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        BUT NOT ON DIRECT FLIGHTS
+                        A SURCHARGE OF USD 140.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        THE PROVISIONS BELOW APPLY ONLY AS FOLLOWS -
+                        TICKETS MUST BE ISSUED ON IB OR BA.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AA.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AY.
+                        OR - TICKETS MUST BE ISSUED ON IB OR US.
+                        THERE IS NO FUEL SURCHARGE PER COUPON FOR INTERNATIONAL
+                        SECTORS.
+                        OTHERWISE
+                        ORIGINATING AREA 2 -
+                        A SURCHARGE OF EUR 220.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        NOTE -
+                        CHILD DISCOUNT DOES NOT APPLY.
+                        AND - ORIGINATING AREA 1 -
+                        A SURCHARGE OF USD 250.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        NOTE -
+                        CHILD DISCOUNT DOES NOT APPLY.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="15" Type="RULE">FROM/TO THE UNITED STATES
+                        TICKETS MUST BE ISSUED ON IB OR BA AND MAY NOT BE SOLD IN
+                        VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE ISSUED
+                        BY ELECTRONIC TICKETING. EXTENSION OF TICKET VALIDITY IS
+                        NOT PERMITTED.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AA AND MAY NOT BE
+                        SOLD IN VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE
+                        ISSUED BY ELECTRONIC TICKETING. EXTENSION OF TICKET
+                        VALIDITY IS NOT PERMITTED.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AY AND MAY NOT BE
+                        SOLD IN VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE
+                        ISSUED BY ELECTRONIC TICKETING. EXTENSION OF TICKET
+                        VALIDITY IS NOT PERMITTED.
+                        OR - TICKETS MUST BE ISSUED ON IB OR US AND MAY NOT BE
+                        SOLD IN VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE
+                        ISSUED BY ELECTRONIC TICKETING. EXTENSION OF TICKET
+                        VALIDITY IS NOT PERMITTED.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="16" Type="RULE">FOR N- TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        CANCELLATIONS
+                        ANY TIME
+                        TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/NO-SHOW/
+                        REFUND.
+                        NOTE -
+                        WAIVED FOR DEATH OF A PASSENGER AND PASSENGER-S
+                        TRAVELING COMPANIONS.
+                        --------------------------------------------------
+                        WHEN COMBINING FARES THAT HAVE CANCELLATION FEES
+                        THE HIGHEST CANCELLATION FEE OF EACH CANCELLED
+                        PRICING UNIT APPLIES.
+                        WITH THE FOLLOWING EXCEPTION-
+                        WHEN COMBINING A REFUNDABLE FARE WITH A
+                        NON-REFUNDABLE FARE
+                        1- THE AMOUNT PAID ON THE REFUNDABLE FARE
+                        COMPONENT IS REFUNDED LESS APPLICABLE PENALTY.
+                        2- THE AMOUNT PAID ON THE NON-REFUNDABLE FARE
+                        COMPONENT WILL NOT BE REFUNDED.
+                        REFUND OF UNUSED TAXES FEES AND CHARGES PAID TO
+                        THIRD PARTIES PERMITTED. FUEL AND INSURANCE
+                        SURCHARGES WILL NOT BE REFUNDED.
+                        FULL REFUND PERMITTED BEFORE DEPARTURE IN CASE OF
+                        REJECTION OF VISA EMBASSY STATEMENT REQUIERED.
+                        CHANGES
+                        ANY TIME
+                        CHARGE EUR 150.00 FOR REISSUE/REVALIDATION.
+                        NOTE -
+                        THE CHANGE FEE APPLIES PER TRANSACTION AND PERSON
+                        PER ADULT AND CHILD.
+                        A CHANGE IS A ROUTING/OR DATE/OR FLIGHT
+                        MODIFICATION.
+                        CHANGE IS PERMITTED WITHIN TICKET VALIDITY OF
+                        ORIGINAL TICKET.
+                        THE ORIGINAL NON-REFUNDABLE AMOUNT REMAINS
+                        NON-REFUNDABLE.
+                        --------------------------------------------------
+                        WHERE THIS FARE IS COMBINED WITH ANOTHER FARE AND
+                        ONLY ONE FARE COMPONENT IS CHANGED THE PENALTY
+                        CONDITIONS OF THE CHANGED FARE COMPONENTS WILL
+                        APPLY.
+                        WHEN MORE THAN ONE FARE COMPONENT IS BEING CHANGED
+                        THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS
+                        WILL APPLY.
+                        --------------------------------------------------
+                        IN CASE OF UPGRADE TO A HIGHER FARE OR IF THE
+                        ITIRENARY RESULTS IN A HIGHER FARE THE DIFFERENCE
+                        WILL BE COLLECTED - AND- THE CHANGE FEE WILL BE
+                        APPLIED.
+                        --------------------------------------------------
+                        WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE
+                        THE CHANGE FEE WILL BE APPLIED - AND - NO REFUND
+                        WILL BE MADE.
+                        --------------------------------------------------
+                        REISSUE/REVALIDATION MUST BE MADE AT THE SAME
+                        TIME THE RESERVATION IS CHANGED.
+                        --------------------------------------------------
+                        IN CASE OF NO-SHOW/REFUND/CHANGE IS NOT PERMITTED.
+                        --------------------------------------------------
+                        CALCULATION FOR REISSUES
+                        --------------------------------------------------
+                        // CHANGES BEFORE OUTBOUND DEPARTURE //
+                        WHEN THE FIRST FARE COMPONENT IS CHANGED THE
+                        ITINERARY MUST BE REPRICED USING CURRENT FARES
+                        IN EFFECT ON THE DATE THE TICKET IS REISSUED.
+                        --------------------------------------------------
+                        WHEN THERE ARE NO CHANGES TO THE FIRST FARE
+                        COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED
+                        THE ITINERARY MUST BE REPRICED USING HISTORICAL
+                        FARES IN EFFECT ON THE PREVIOUS TICKETING DATE
+                        OR CURRENT FARES IN EFFECT ON THE DATE OF TICKET
+                        REISSUE WHICHEVER IS LOWER.
+                        --------------------------------------------------
+                        --------------------------------------------------
+                        // CHANGES AFTER DEPARTURE //
+                        THE ITINERARY MUST BE REPRICED USING HISTORICAL
+                        FARES IN EFFECT ON THE PREVIOUS TICKETING DATE.
+                        THE NEW ITINERARY MUST MEET ALL RULE PROVISIONS
+                        OF THE NEWLY TICKETED FARE -I.E. ADVANCE
+                        RESERVATIONS/TICKETING DEADLINE/MINIMUM/MAXIMUM
+                        STAY/BOOKING CLASS/SEASONALITY/ETC-.
+                        DOWNGRADING IS NOT PERMITTED FOR ECONOMY FARES.
+                        THE NEW FARE MAY ONLY BE EQUAL OR HIGHER THAN
+                        PREVIOUS. ANY CHANGE WITHIN THE SAME TYPE OF FARE
+                        INVOLVING SEASONALITY OR DAY/TIME IS NOT
+                        CONSIDERED DOWNGRADE.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="17" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        THE HIGHER INTERMEDIATE POINT RULE DOES NOT APPLY FOR
+                        CONNECTIONS.
+                        AND - THE HIGHER INTERMEDIATE POINT RULE DOES NOT APPLY
+                        FOR STOPOVERS.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="18" Type="RULE">FOR N- TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        THE ORIGINAL TICKET MUST BE ANNOTATED - NON-REFUNDABLE -
+                        AND - RESTRICTIONS APPLY - IN THE ENDORSEMENT BOX.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="19" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        ACCOMPANIED CHILD 2-11 - CHARGE 75 PERCENT OF THE FARE.
+                        TICKET DESIGNATOR - CH
+                        OR - INFANT UNDER 2 WITH A SEAT - CHARGE 75 PERCENT OF THE
+                        FARE.
+                        TICKET DESIGNATOR - CH
+                        OR - INFANT UNDER 2 WITHOUT A SEAT - CHARGE 10 PERCENT OF
+                        THE FARE.
+                        TICKET DESIGNATOR - IN
+                        OR - UNACCOMPANIED CHILD 5-11 - CHARGE 100 PERCENT OF THE
+                        FARE.
+                        TICKET DESIGNATOR - UM
+                        OR - UNACCOMPANIED CHILD 12-17 - CHARGE 100 PERCENT OF THE
+                        FARE.
+                        TICKET DESIGNATOR - ZS.
+                        NOTE -
+                        AN ADITIONAL SURCHARGE WILL BE APPLIED.
+                        AN ACCEPTANCE LIMIT ON THE NUMBER OF UNACCOMPANIED
+                        CHILD WILL BE CONSIDER.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="20" Type="RULE">NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+                    <air:FareRuleLong Category="21" Type="RULE">NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+                    <air:FareRuleLong Category="22" Type="RULE">NONE FOR N- TYPE FARES</air:FareRuleLong>
+                    <air:FareRuleLong Category="23" Type="RULE">NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+                    <air:FareRuleLong Category="31" Type="RULE">DO A CATEGORY 31 SPECIFIC TEXT ENTRY TO VIEW CONTENTS
+                        ALSO REFERENCE 16 PENALTIES - FOR ADDITIONAL CHANGE INFORMATION
+                    </air:FareRuleLong>
+                </air:FareRule>
+                <air:FareRule FareInfoRef="JbSEme9gTASkPn+73XnGEQ==" RuleNumber="J002" Source="ATPCO"
+                              TariffNumber="001">
+                    <air:FareRuleLong Category="0" Type="RULE">RULE - 001/J002
+                        UNLESS OTHERWISE SPECIFIED
+                        PUBLIC FARES
+                        APPLICATION
+                        AREA
+                        THESE FARES APPLY
+                        FROM SPAIN AND CANARY ISLANDS TO NORTH AMERICA.
+                        CLASS OF SERVICE
+                        THESE FARES APPLY FOR ECONOMY CLASS SERVICE.
+                        TYPES OF TRANSPORTATION
+                        FARES GOVERNED BY THIS RULE CAN BE USED TO CREATE
+                        ONE-WAY/ROUND-TRIP/CIRCLE-TRIP/OPEN-JAW JOURNEYS.
+                        CAPACITY LIMITATIONS
+                        THE CARRIER SHALL LIMIT THE NUMBER OF PASSENGERS CARRIED
+                        ON ANY ONE FLIGHT AT FARES GOVERNED BY THIS RULE AND SUCH
+                        FARES WILL NOT NECESSARILY BE AVAILABLE ON ALL FLIGHTS.
+                        THE NUMBER OF SEATS WHICH THE CARRIER SHALL MAKE
+                        AVAILABLE ON A GIVEN FLIGHT WILL BE DETERMINED BY THE
+                        CARRIERS BEST JUDGMENT
+                        OTHER CONDITIONS
+                        THE TICKET IS INVALID FOR TRAVEL IF FLIGHT COUPONS
+                        ARE NOT USED IN SEQUENCE.
+                        ---
+                        PASSENGER EXPENSES NOT ABSORBED BY CARRIER.
+                        ---
+                        FARE DOES NOT APPLY FOR REFUND CALCULATION AFTER
+                        TRAVEL AT A HIGHER FARE.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="4" Type="RULE">BETWEEN EUROPE AND NORTH AMERICA NOTE - GENERAL RULE DOES
+                        NOT
+                        APPLY
+                        THE FARE COMPONENT MUST NOT BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY A3 FLIGHT OPERATED BY A3
+                        ANY IB FLIGHT OPERATED BY A3
+                        ANY AB FLIGHT OPERATED BY AB
+                        ANY IB FLIGHT OPERATED BY AB
+                        ANY KM FLIGHT OPERATED BY KM
+                        ANY IB FLIGHT OPERATED BY KM
+                        ANY FB FLIGHT OPERATED BY FB
+                        ANY IB FLIGHT OPERATED BY FB
+                        ANY IG FLIGHT OPERATED BY IG
+                        ANY IB FLIGHT OPERATED BY IG
+                        ANY LO FLIGHT OPERATED BY LO
+                        ANY IB FLIGHT OPERATED BY LO
+                        ANY LG FLIGHT OPERATED BY LG
+                        ANY IB FLIGHT OPERATED BY LG
+                        ANY OA FLIGHT OPERATED BY OA
+                        ANY IB FLIGHT OPERATED BY OA
+                        ANY OK FLIGHT OPERATED BY OK
+                        ANY IB FLIGHT OPERATED BY OK
+                        ANY RO FLIGHT OPERATED BY RO
+                        ANY IB FLIGHT OPERATED BY RO
+                        IN COMBINATION WITH
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY AA
+                        ANY IB FLIGHT OPERATED BY AY
+                        ANY IB FLIGHT OPERATED BY BA
+                        ANY IB FLIGHT OPERATED BY VY
+                        ANY IB FLIGHT OPERATED BY US.
+                        AND
+                        THE FARE COMPONENT MUST NOT BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        AA FLIGHTS 5970 THROUGH 6017
+                        AA FLIGHTS 6018 THROUGH 6070
+                        AA FLIGHTS 6199 THROUGH 6200
+                        AA FLIGHTS 6750 THROUGH 7128
+                        AA FLIGHTS 6950 THROUGH 7969
+                        AA FLIGHTS 7219 THROUGH 7238
+                        AA FLIGHTS 7424 THROUGH 7453
+                        AA FLIGHTS 7454 THROUGH 7637
+                        AA FLIGHTS 7745 THROUGH 7823
+                        AA FLIGHTS 7833 THROUGH 7862
+                        AA FLIGHTS 7863 THROUGH 7949
+                        AA FLIGHTS 7970 THROUGH 8049
+                        AA FLIGHTS 8350 THROUGH 8399
+                        ANY AA FLIGHT OPERATED BY US
+                        AM FLIGHTS 3000 THROUGH 5999
+                        AM FLIGHTS 7000 THROUGH 9999
+                        BA FLIGHTS 0001 THROUGH 0004
+                        BA FLIGHTS 4000 THROUGH 4199
+                        BA FLIGHTS 5700 THROUGH 5999
+                        BA FLIGHTS 6100 THROUGH 6199
+                        BA FLIGHTS 7000 THROUGH 7049
+                        IB FLIGHTS 5000 THROUGH 5999
+                        IB FLIGHTS 7464 THROUGH 7466
+                        IB FLIGHT 7469
+                        ANY 2C FLIGHT
+                        ANY 2V FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN EUROPE
+                        THEN THAT TRAVEL MUST NOT BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        LO FLIGHTS 4000 THROUGH 9999
+                        RO FLIGHTS 9000 THROUGH 9999
+                        PS FLIGHTS 1000 THROUGH 9999
+                        SU FLIGHTS 0401 THROUGH 0500
+                        SU FLIGHTS 0601 THROUGH 0700
+                        SU FLIGHTS 1401 THROUGH 1700
+                        IG FLIGHTS 9000 THROUGH 9999.
+                        AND
+                        THE FARE COMPONENT MUST INCLUDE TRAVEL VIA EACH
+                        TRANSATLANTIC SECTOR BUT NOT ON
+                        ONE OR MORE OF THE FOLLOWING
+                        IB FLIGHTS 7989 THROUGH 7990.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN EUROPE
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY 9B FLIGHT OPERATED BY 2A
+                        ANY A4 FLIGHT OPERATED BY A4
+                        ANY AB FLIGHT OPERATED BY AB
+                        ANY AY FLIGHT OPERATED BY AY
+                        ANY FB FLIGHT OPERATED BY FB
+                        ANY IG FLIGHT OPERATED BY IG
+                        ANY KM FLIGHT OPERATED BY KM
+                        ANY LG FLIGHT OPERATED BY LG
+                        ANY LO FLIGHT OPERATED BY LO
+                        ANY MA FLIGHT OPERATED BY MA
+                        ANY OA FLIGHT OPERATED BY OA
+                        ANY OK FLIGHT OPERATED BY OK
+                        ANY RO FLIGHT OPERATED BY RO
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY US FLIGHT
+                        ANY NT FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN MEXICO
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY VW FLIGHT
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY US FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL WITHIN THE UNITED
+                        STATES/CANADA
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY B6 FLIGHT
+                        ANY US FLIGHT.
+                        AND
+                        IF THE FARE COMPONENT INCLUDES TRAVEL BETWEEN THE UNITED
+                        STATES/CANADA AND MEXICO
+                        THEN THAT TRAVEL MUST BE ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY AA FLIGHT
+                        ANY AY FLIGHT
+                        ANY BA FLIGHT
+                        ANY IB FLIGHT
+                        ANY US FLIGHT.
+                        AND
+                        THE FARE COMPONENT MUST INCLUDE TRAVEL VIA EACH
+                        TRANSATLANTIC SECTOR ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="5" Type="RULE">FOR FC TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        STANDBY NOT PERMITTED.
+                        OPEN RETURNS PERMITTED.
+                        WHEN RESERVATIONS ARE MADE AT LEAST 1 DAY BEFORE DEPARTURE
+                        TICKETING MUST BE COMPLETED WITHIN 28 DAYS AFTER
+                        RESERVATIONS ARE MADE OR AT LEAST 1 DAY BEFORE DEPARTURE
+                        WHICHEVER IS EARLIER.
+                        OR - RESERVATIONS AND TICKETING MUST BE COMPLETED AT THE
+                        SAME TIME.
+                        OPEN RETURNS PERMITTED.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="6" Type="RULE">NONE FOR FC TYPE FARES</air:FareRuleLong>
+                    <air:FareRuleLong Category="7" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        TRAVEL FROM LAST STOPOVER MUST COMMENCE NO LATER THAN 12
+                        MONTHS AFTER DEPARTURE FROM FARE ORIGIN.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="8" Type="RULE">FOR B- TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        2 STOPOVERS PERMITTED ON THE PRICING UNIT AT EUR 75.00
+                        EACH.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="9" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        2 TRANSFERS PERMITTED IN EACH DIRECTION FREE
+                        1 FREE ON AA/AY/B6/BA/IB/US ONLY IN BOS IN EACH
+                        DIRECTION
+                        2 FREE ON AA/AY/BA/IB/US ONLY IN NORTH AMERICA IN EACH
+                        DIRECTION.
+                        AND - 2 TRANSFERS PERMITTED IN EACH DIRECTION FREE
+                        2 FREE IN AUSTRIA/BELGIUM/BULGARIA/CYPRUS/CZECH
+                        REPUBLIC/DENMARK/ESTONIA/FINLAND/FRANCE/
+                        GERMANY/GREECE/HUNGARY/IRELAND/ITALY/LATVIA/
+                        LITHUANIA/LUXEMBOURG/MALTA/NETHERLANDS/NORWAY/
+                        POLAND/PORTUGAL/ROMANIA/SLOVAKIA/SLOVENIA/SPAIN
+                        AND CANARY ISLANDS/SWEDEN/SWITZERLAND/UNITED
+                        KINGDOM IN EACH DIRECTION
+                        FARE BREAK SURFACE SECTORS NOT PERMITTED AND
+                        EMBEDDED SURFACE SECTORS PERMITTED ON THE FARE
+                        COMPONENT.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="10" Type="RULE">UNLESS OTHERWISE SPECIFIED
+                        END-ON-END NOT PERMITTED. SIDE TRIPS PERMITTED.
+                        APPLICABLE ADD-ON CONSTRUCTION IS ADDRESSED IN
+                        MISCELLANEOUS PROVISIONS - CATEGORY 23.
+                        OPEN JAWS
+                        FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+                        -TO FORM DOUBLE OPEN JAWS.
+                        A MAXIMUM OF TWO INTERNATIONAL FARE COMPONENTS
+                        PERMITTED.
+                        MILEAGE OF THE OPEN SEGMENT MUST BE EQUAL/LESS THAN
+                        MILEAGE OF THE LONGEST FLOWN FARE COMPONENT.
+                        PROVIDED -
+                        WHEN THE OPEN SEGMENT OCCURS
+                        -WITHIN NORTH AMERICA OR WITHIN EUROPE
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER IB/BA/AA/
+                        AY/US IN ANY RULE IN TARIFF
+                        FBRA12P - BETWEEN AREA 1 AND AREA 2 EXCEPT US/CA
+                        FBRINPV - BETWEEN USA/CA-AREA 1/2/3
+                        IPRA - USA/CANADA-AREA 2/3 AND GUAM-AREA 2 VIA
+                        ATLANTIC
+                        IPRAI - BETWEEN THE USA/CANADA-AREA 2/3 VIA ATLANTIC
+                        IPRSAA2 - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        SAR2RPV - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        TAPVR - BETWEEN AREA 1-AREA 2/3 AND GUAM-AREA 2.
+                        OPEN JAWS
+                        FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+                        -TO FORM SINGLE OPEN JAWS.
+                        PROVIDED -
+                        COMBINATIONS ARE NOT WITH ANY FARE FOR ANY CARRIER IN
+                        ANY RULE IN TARIFF
+                        IPRWI - WITHIN THE WESTERN HEMISPHERE-INTERNATIONAL.
+                        OPEN JAWS/ROUND TRIPS/CIRCLE TRIPS
+                        FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+                        -TO FORM SINGLE OPEN JAWS.
+                        A MAXIMUM OF TWO INTERNATIONAL FARE COMPONENTS
+                        PERMITTED.
+                        MILEAGE OF THE OPEN SEGMENT MUST BE EQUAL/LESS THAN
+                        MILEAGE OF THE LONGEST FLOWN FARE COMPONENT.
+                        -TO FORM ROUND TRIPS
+                        -TO FORM CIRCLE TRIPS
+                        A MAXIMUM OF TWO INTERNATIONAL FARE COMPONENTS
+                        PERMITTED.
+                        PROVIDED -
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER BA/IB IN ANY
+                        RULE IN TARIFF
+                        FBRA12P - BETWEEN AREA 1 AND AREA 2 EXCEPT US/CA
+                        FBRINPV - BETWEEN USA/CA-AREA 1/2/3
+                        IPRA - USA/CANADA-AREA 2/3 AND GUAM-AREA 2 VIA
+                        ATLANTIC
+                        IPRAI - BETWEEN THE USA/CANADA-AREA 2/3 VIA ATLANTIC
+                        IPRSAA2 - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        SAR2RPV - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        TAPVR - BETWEEN AREA 1-AREA 2/3 AND GUAM-AREA 2.
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER AA/AY/US
+                        FROM/TO MEXICO IN ANY RULE IN TARIFF
+                        FBRA12P - BETWEEN AREA 1 AND AREA 2 EXCEPT US/CA
+                        IPRSAA2 - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC
+                        SAR2RPV - BETWEEN THE WESTERN HEMISPHERE-AREA 2 VIA
+                        ATLANTIC.
+                        COMBINATIONS ARE WITH ANY FARE FOR CARRIER AA/AY/US IN
+                        ANY RULE IN TARIFF
+                        FBRINPV - BETWEEN USA/CA-AREA 1/2/3
+                        IPRA - USA/CANADA-AREA 2/3 AND GUAM-AREA 2 VIA
+                        ATLANTIC
+                        TAPVR - BETWEEN AREA 1-AREA 2/3 AND GUAM-AREA 2.
+                        NOTE - THE CITY PAIRS BELOW ARE CONSIDERED THE SAME POINT-
+                        BWI-WAS FLL-MIA OAK-SFO OAK-SJC SFO-SJC LAX-ONT
+                        LAX-BUR LAX-LGB LAX-SNA ONT-BUR ONT-LGB ONT-SNA
+                        BUR-LGB BUR-SNA LGB-SNA NYC-EWR
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="12" Type="RULE">BETWEEN AREA 1 AND AREA 2
+                        ORIGINATING AREA 2 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        ON DIRECT FLIGHTS
+                        A SURCHARGE OF EUR 100.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        ORIGINATING AREA 2 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        BUT NOT ON DIRECT FLIGHTS
+                        A SURCHARGE OF EUR 125.00 PER TRANSFER WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        ORIGINATING AREA 1 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        ON DIRECT FLIGHTS
+                        A SURCHARGE OF USD 115.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        ORIGINATING AREA 1 -
+                        IF UNACCOMPANIED CHILD 5-17 WITH ID.
+                        AND
+                        IF THE FARE COMPONENT IS ON
+                        ONE OR MORE OF THE FOLLOWING
+                        ANY IB FLIGHT OPERATED BY IB
+                        BUT NOT ON DIRECT FLIGHTS
+                        A SURCHARGE OF USD 140.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        THE PROVISIONS BELOW APPLY ONLY AS FOLLOWS -
+                        TICKETS MUST BE ISSUED ON IB OR BA.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AA.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AY.
+                        OR - TICKETS MUST BE ISSUED ON IB OR US.
+                        THERE IS NO FUEL SURCHARGE PER COUPON FOR INTERNATIONAL
+                        SECTORS.
+                        OTHERWISE
+                        ORIGINATING AREA 2 -
+                        A SURCHARGE OF EUR 220.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        NOTE -
+                        CHILD DISCOUNT DOES NOT APPLY.
+                        AND - ORIGINATING AREA 1 -
+                        A SURCHARGE OF USD 250.00 PER DIRECTION WILL BE ADDED
+                        TO THE APPLICABLE FARE FOR TRAVEL.
+                        NOTE -
+                        CHILD DISCOUNT DOES NOT APPLY.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="15" Type="RULE">FROM/TO THE UNITED STATES
+                        TICKETS MUST BE ISSUED ON IB OR BA AND MAY NOT BE SOLD IN
+                        VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE ISSUED
+                        BY ELECTRONIC TICKETING. EXTENSION OF TICKET VALIDITY IS
+                        NOT PERMITTED.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AA AND MAY NOT BE
+                        SOLD IN VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE
+                        ISSUED BY ELECTRONIC TICKETING. EXTENSION OF TICKET
+                        VALIDITY IS NOT PERMITTED.
+                        OR - TICKETS MUST BE ISSUED ON IB OR AY AND MAY NOT BE
+                        SOLD IN VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE
+                        ISSUED BY ELECTRONIC TICKETING. EXTENSION OF TICKET
+                        VALIDITY IS NOT PERMITTED.
+                        OR - TICKETS MUST BE ISSUED ON IB OR US AND MAY NOT BE
+                        SOLD IN VENEZUELA/NIGERIA/EGYPT/ANGOLA
+                        TICKETS MAY NOT BE ISSUED BY PTA. TICKETS MUST BE
+                        ISSUED BY ELECTRONIC TICKETING. EXTENSION OF TICKET
+                        VALIDITY IS NOT PERMITTED.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="16" Type="RULE">FOR B- TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        CANCELLATIONS
+                        BEFORE DEPARTURE
+                        CHARGE EUR 200.00.
+                        NOTE -
+                        THE ORIGINAL NON-REFUNDABLE AMOUNT REMAINS
+                        NON-REFUNDABLE.
+                        IN CASE OF NO-SHOW REFUND IS NOT PERMITTED.
+                        REFUND PERMITTED WITHIN TICKET VALIDITY.
+                        --------------------------------------------------
+                        WAIVED FOR DEATH OF A PASSENGER AND PASSENGER-S
+                        IMMEDIATE FAMILY MEMBER /1ST DEGREE RELATIONS
+                        ONLY/ OR FOR PASSENGER-S HOSPITAL ADMISSION.
+                        --------------------------------------------------
+                        WHEN COMBINING FARES THAT HAVE CANCELLATION FEES
+                        THE HIGHEST CANCELLATION FEE OF EACH CANCELLED
+                        PRICING UNIT APPLIES.
+                        WITH THE FOLLOWING EXCEPTION-
+                        WHEN COMBINING A REFUNDABLE FARE WITH A
+                        NON-REFUNDABLE FARE
+                        1- THE AMOUNT PAID ON THE REFUNDABLE FARE
+                        COMPONENT IS REFUNDED LESS APPLICABLE PENALTY.
+                        2- THE AMOUNT PAID ON THE NON-REFUNDABLE FARE
+                        COMPONENT WILL NOT BE REFUNDED.
+                        AFTER DEPARTURE
+                        TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/NO-SHOW/
+                        REFUND.
+                        NOTE -
+                        WAIVED FOR DEATH OF A PASSENGER AND PASSENGER-S
+                        TRAVELING COMPANIONS.
+                        --------------------------------------------------
+                        WHEN COMBINING FARES THAT HAVE CANCELLATION FEES
+                        THE HIGHEST CANCELLATION FEE OF EACH CANCELLED
+                        PRICING UNIT APPLIES.
+                        WITH THE FOLLOWING EXCEPTION-
+                        WHEN COMBINING A REFUNDABLE FARE WITH A
+                        NON-REFUNDABLE FARE
+                        1- THE AMOUNT PAID ON THE REFUNDABLE FARE
+                        COMPONENT IS REFUNDED LESS APPLICABLE PENALTY.
+                        2- THE AMOUNT PAID ON THE NON-REFUNDABLE FARE
+                        COMPONENT WILL NOT BE REFUNDED.
+                        REFUND OF UNUSED TAXES FEES AND CHARGES PAID TO
+                        THIRD PARTIES PERMITTED. FUEL AND INSURANCE
+                        SURCHARGES WILL NOT BE REFUNDED.
+                        FULL REFUND PERMITTED BEFORE DEPARTURE IN CASE OF
+                        REJECTION OF VISA EMBASSY STATEMENT REQUIERED.
+                        CHANGES
+                        ANY TIME
+                        CHARGE EUR 150.00 FOR REISSUE/REVALIDATION.
+                        NOTE -
+                        THE CHANGE FEE APPLIES PER TRANSACTION AND PERSON
+                        PER ADULT AND CHILD.
+                        A CHANGE IS A ROUTING/OR DATE/OR FLIGHT
+                        MODIFICATION.
+                        CHANGE IS PERMITTED WITHIN TICKET VALIDITY OF
+                        ORIGINAL TICKET.
+                        THE ORIGINAL NON-REFUNDABLE AMOUNT REMAINS
+                        NON-REFUNDABLE.
+                        --------------------------------------------------
+                        WHERE THIS FARE IS COMBINED WITH ANOTHER FARE AND
+                        ONLY ONE FARE COMPONENT IS CHANGED THE PENALTY
+                        CONDITIONS OF THE CHANGED FARE COMPONENTS WILL
+                        APPLY.
+                        WHEN MORE THAN ONE FARE COMPONENT IS BEING CHANGED
+                        THE HIGHEST PENALTY OF ALL CHANGED FARE COMPONENTS
+                        WILL APPLY.
+                        --------------------------------------------------
+                        IN CASE OF UPGRADE TO A HIGHER FARE OR IF THE
+                        ITIRENARY RESULTS IN A HIGHER FARE THE DIFFERENCE
+                        WILL BE COLLECTED - AND- THE CHANGE FEE WILL BE
+                        APPLIED.
+                        --------------------------------------------------
+                        WHEN THE NEW ITINERARY RESULTS IN A LOWER FARE
+                        THE CHANGE FEE WILL BE APPLIED - AND - NO REFUND
+                        WILL BE MADE.
+                        --------------------------------------------------
+                        REISSUE/REVALIDATION MUST BE MADE AT THE SAME
+                        TIME THE RESERVATION IS CHANGED.
+                        --------------------------------------------------
+                        IN CASE OF NO-SHOW/REFUND/CHANGE IS NOT PERMITTED.
+                        --------------------------------------------------
+                        CALCULATION FOR REISSUES
+                        --------------------------------------------------
+                        // CHANGES BEFORE OUTBOUND DEPARTURE //
+                        WHEN THE FIRST FARE COMPONENT IS CHANGED THE
+                        ITINERARY MUST BE REPRICED USING CURRENT FARES
+                        IN EFFECT ON THE DATE THE TICKET IS REISSUED.
+                        --------------------------------------------------
+                        WHEN THERE ARE NO CHANGES TO THE FIRST FARE
+                        COMPONENT BUT OTHER FARE COMPONENTS ARE CHANGED
+                        THE ITINERARY MUST BE REPRICED USING HISTORICAL
+                        FARES IN EFFECT ON THE PREVIOUS TICKETING DATE
+                        OR CURRENT FARES IN EFFECT ON THE DATE OF TICKET
+                        REISSUE WHICHEVER IS LOWER.
+                        --------------------------------------------------
+                        --------------------------------------------------
+                        // CHANGES AFTER DEPARTURE //
+                        THE ITINERARY MUST BE REPRICED USING HISTORICAL
+                        FARES IN EFFECT ON THE PREVIOUS TICKETING DATE.
+                        THE NEW ITINERARY MUST MEET ALL RULE PROVISIONS
+                        OF THE NEWLY TICKETED FARE -I.E. ADVANCE
+                        RESERVATIONS/TICKETING DEADLINE/MINIMUM/MAXIMUM
+                        STAY/BOOKING CLASS/SEASONALITY/ETC-.
+                        DOWNGRADING IS NOT PERMITTED FOR ECONOMY FARES.
+                        THE NEW FARE MAY ONLY BE EQUAL OR HIGHER THAN
+                        PREVIOUS. ANY CHANGE WITHIN THE SAME TYPE OF FARE
+                        INVOLVING SEASONALITY OR DAY/TIME IS NOT
+                        CONSIDERED DOWNGRADE.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="17" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        THE HIGHER INTERMEDIATE POINT RULE DOES NOT APPLY FOR
+                        CONNECTIONS.
+                        AND - THE HIGHER INTERMEDIATE POINT RULE DOES NOT APPLY
+                        FOR STOPOVERS.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="18" Type="RULE">FOR B- TYPE FARES NOTE - GENERAL RULE DOES NOT APPLY
+                        THE ORIGINAL TICKET MUST BE ANNOTATED - RESTRICTIONS
+                        APPLY- IN THE ENDORSEMENT BOX.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="19" Type="RULE">UNLESS OTHERWISE SPECIFIED NOTE - GENERAL RULE DOES NOT
+                        APPLY
+                        ACCOMPANIED CHILD 2-11 - CHARGE 75 PERCENT OF THE FARE.
+                        TICKET DESIGNATOR - CH
+                        OR - INFANT UNDER 2 WITH A SEAT - CHARGE 75 PERCENT OF THE
+                        FARE.
+                        TICKET DESIGNATOR - CH
+                        OR - INFANT UNDER 2 WITHOUT A SEAT - CHARGE 10 PERCENT OF
+                        THE FARE.
+                        TICKET DESIGNATOR - IN
+                        OR - UNACCOMPANIED CHILD 5-11 - CHARGE 100 PERCENT OF THE
+                        FARE.
+                        TICKET DESIGNATOR - UM
+                        OR - UNACCOMPANIED CHILD 12-17 - CHARGE 100 PERCENT OF THE
+                        FARE.
+                        TICKET DESIGNATOR - ZS.
+                        NOTE -
+                        AN ADITIONAL SURCHARGE WILL BE APPLIED.
+                        AN ACCEPTANCE LIMIT ON THE NUMBER OF UNACCOMPANIED
+                        CHILD WILL BE CONSIDER.
+                    </air:FareRuleLong>
+                    <air:FareRuleLong Category="20" Type="RULE">NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+                    <air:FareRuleLong Category="21" Type="RULE">NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+                    <air:FareRuleLong Category="22" Type="RULE">NONE FOR B- TYPE FARES</air:FareRuleLong>
+                    <air:FareRuleLong Category="23" Type="RULE">NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+                    <air:FareRuleLong Category="31" Type="RULE">DO A CATEGORY 31 SPECIFIC TEXT ENTRY TO VIEW CONTENTS
+                        ALSO REFERENCE 16 PENALTIES - FOR ADDITIONAL CHANGE INFORMATION
+                    </air:FareRuleLong>
+                </air:FareRule>
+            </air:AirPriceResult>
+        </air:AirPriceRsp>
+    </SOAP:Body>
+</SOAP:Envelope>

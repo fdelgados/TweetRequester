@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                          http://raw.github.com/doctrine/doctrine2/master/doctrine-mapping.xsd">
+    <entity name="AppBundle\Domain\Model\Ad\Ad" table="ads" repository-class="AppBundle\Infrastructure\Persistence\Doctrine\Ad\DoctrineAdRepository">
+        <field name="publicationDate" column="publicationDate" type="datetime" nullable="false"/>
+        <embedded name="id" class="AppBundle\Domain\Model\Ad\AdId" use-column-prefix="false"/>
+        <embedded name="title" use-column-prefix="false" class="AppBundle\Domain\Model\Ad\AdTitle"/>
+        <embedded name="description" use-column-prefix="false" class="AppBundle\Domain\Model\Ad\AdDescription"/>
+    </entity>
+</doctrine-mapping>

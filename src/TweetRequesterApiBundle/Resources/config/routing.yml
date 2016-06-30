@@ -1,0 +1,9 @@
+tweet_requester_api_homepage:
+    path:     /
+    methods: [POST,GET,HEAD]
+    defaults: { _controller: TweetRequesterApiBundle:Api:index }
+
+tweet_requester_api_gettweets:
+    path: /api/tweets/{username}
+    methods: [POST,GET,HEAD]
+    defaults: { _controller: TweetRequesterApiBundle:Api:getTweets }

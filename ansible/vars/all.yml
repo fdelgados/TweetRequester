@@ -1,0 +1,23 @@
+---
+server:
+    install: '1'
+    timezone: Europe/Madrid
+    locale: es_ES.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: vagrant.www.sellapp.dev, ip: 192.168.33.100, memory: '1024', sharedfolder: ./, useVagrantCloud: '1', syncType: rsync }
+nginx:
+    install: '1'
+    docroot: /vagrant/web
+    servername: sellapp.vb
+sqlite:
+    install: '1'
+php:
+    install: '1'
+    ppa: php5-5.6
+    packages: [php5-cli, php5-intl, php5-mcrypt, php5-sqlite]
+xdebug:
+    install: '1'
+composer:
+    install: '1'
+
