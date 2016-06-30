@@ -12,8 +12,10 @@ class CollectionTweetRepository implements TweetRepository
      */
     public function tweetOfId($id)
     {
-        if (in_array($this->tweets[$id])) {
+        if (isset($this->tweets[$id])) {
             return $this->tweets[$id];
         }
+
+        return null;
     }
 }
