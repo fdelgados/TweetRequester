@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Application\Service;
+namespace ApiBundle\Application\Service;
 
 interface ApplicationServiceResponse
 {

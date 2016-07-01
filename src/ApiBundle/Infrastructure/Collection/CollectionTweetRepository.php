@@ -2,11 +2,14 @@
 
 namespace ApiBundle\Infrastructure\Collection;
 
+use ApiBundle\Domain\Model\Tweet\Tweet;
 use ApiBundle\Domain\Model\Tweet\TweetRepository;
 
 class CollectionTweetRepository implements TweetRepository
 {
+    /** @var Tweet[] */
     private $tweets = [];
+
     /**
      * @inheritdoc
      */
@@ -17,5 +20,13 @@ class CollectionTweetRepository implements TweetRepository
         }
 
         return null;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function add(Tweet $tweet)
+    {
+        $this->tweets[$tweet->id()] = $tweet;
     }
 }
