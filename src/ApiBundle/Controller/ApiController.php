@@ -3,6 +3,7 @@
 namespace ApiBundle\Controller;
 
 use FOS\RestBundle\FOSRestBundle;
+use Symfony\Component\HttpFoundation\Request;
 
 class ApiController extends FOSRestBundle
 {
@@ -11,7 +12,7 @@ class ApiController extends FOSRestBundle
         
     }
     
-    public function getTweetsAction()
+    public function getTweetsAction(Request $request)
     {
 
     }
