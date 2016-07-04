@@ -1,0 +1,32 @@
+services:
+    tweet_requester_api.guzzle_client:
+        class: GuzzleHttp\Client
+        arguments: ["%twitter_api.connection%"]
+
+    tweet_requester_api.guzzle_oauth:
+        class: GuzzleHttp\Subscriber\Oauth\Oauth1
+        arguments: [%twitter_api.authentication%]
+
+    tweet_requester_api.guzzle_handles_stack:
+        class: GuzzleHttp\HandlerStack
+        arguments: ['@tweet_requester_api.guzzle_oauth']
+
+    tweet_requester_api.http_tweet_adatper:
+        class: ApiBundle\Infrastructure\Service\Tweet\HttpTweetAdapter
+        arguments: ['@tweet_requester_api.guzzle_client', '@tweet_requester_api.guzzle_oauth']
+
+    tweet_requester_api.redis_cache:
+        class: ApiBundle\Infrastructure\Caching\Redis\RedisCache
+        arguments: ['@snc_redis.default']
+
+    tweet_requester_api.translating_tweet_service:
+        class: ApiBundle\Infrastructure\Service\Tweet\TranslatingTweetService
+        arguments: ['@tweet_requester_api.http_tweet_adatper', '@tweet_requester_api.redis_cache']
+
+    tweet_requester_api.tweet_getter:
+        class: ApiBundle\Domain\Service\Tweet\TweetGetter
+        arguments: ['@tweet_requester_api.translating_tweet_service']
+
+    tweet_requester_api.get_latest_tweets_service:
+        class: ApiBundle\Application\Service\Tweet\GetLatestTweetsService
+        arguments: ['@tweet_requester_api.tweet_getter']

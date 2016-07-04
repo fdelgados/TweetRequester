@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        backupStaticAttributes="false"
+        cacheTokens="false"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        forceCoversAnnotation="false"
+        mapTestClassNameToCoveredClassName="false"
+        printerClass="PHPUnit_TextUI_ResultPrinter"
+        processIsolation="false"
+        stopOnError="true"
+        stopOnFailure="false"
+        stopOnIncomplete="false"
+        stopOnSkipped="false"
+        testSuiteLoaderClass="PHPUnit_Runner_StandardTestSuiteLoader"
+        strict="false"
+        verbose="false"
+        bootstrap = "./app/bootstrap.php.cache"
+>
+    <php>
+        <server name="KERNEL_DIR" value="./app" />
+    </php>
+    <testsuites>
+        <testsuite name="TweetRequesterApi Test suites">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory>src/ApiBundle</directory>
+            <exclude>
+                <directory>src/ApiBundle/Infrastructure</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

@@ -1,0 +1,19 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+  api.infrastructure.persistence.doctrine.ad.ad_repository:
+    class: AppBundle\Infrastructure\Persistence\Doctrine\Ad\DoctrineAdRepository
+    factory: ["@doctrine", getRepository]
+    public: false
+    arguments:
+      - "AppBundle\\Domain\\Model\\Ad\\Ad"
+
+  api.application.service.ad.user_publish_an_ad:
+    class: AppBundle\Application\Service\Ad\UserPublishAnAdService
+    arguments: ["@api.infrastructure.persistence.doctrine.ad.ad_repository"]

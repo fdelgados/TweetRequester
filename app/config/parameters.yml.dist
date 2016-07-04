@@ -1,0 +1,30 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    database_host:     ~
+    database_port:     ~
+    database_name:     ~
+    database_user:     ~
+    database_password: ~
+    # You should uncomment this if you want use pdo_sqlite
+    # database_path: "%kernel.root_dir%/data/sellapp.db3"
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    redis_host: redis://localhost
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            a4d8d074c81a02649a428f12eaec7d1bf10cb5ec
+
+    # Twitter API connection
+    twitter_api.connection:
+        base_uri: https://api.twitter.com/1.1
+    twitter_api.authentication:
+        consumer_key: TuRPGYq4BCZCk3WIf0tYpNCFK
+        consumer_secret: o2jzzSANasK8SUTpcwJ3KEW4MTB7PKnEtL4LAlTnhtfV0ufxFS
+        token: 2365399641-g5Qxkk8p5RfvoAspaFEAVCUs1akVD1TbWTAF6TS
+        token_secret: TVwswAE8nhBuKN0XDZmm3a3wpPd3BOCWd9juGfttv5P8O

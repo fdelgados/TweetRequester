@@ -1,0 +1,4 @@
+api_rest_gettweets:
+    path: /tweets/{username}
+    methods: [POST,GET,HEAD]
+    defaults: { _controller: ApiBundle:ApiRest:getTweets }
