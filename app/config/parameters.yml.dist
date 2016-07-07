@@ -15,5 +15,16 @@ parameters:
     mailer_user:       ~
     mailer_password:   ~
 
+    redis_host: redis://localhost
+
     # A secret key that's used to generate certain security-related tokens
     secret:            a4d8d074c81a02649a428f12eaec7d1bf10cb5ec
+
+    # Twitter API connection
+    twitter_api.connection:
+        base_uri: https://api.twitter.com/1.1
+    twitter_api.authentication:
+        consumer_key: TuRPGYq4BCZCk3WIf0tYpNCFK
+        consumer_secret: o2jzzSANasK8SUTpcwJ3KEW4MTB7PKnEtL4LAlTnhtfV0ufxFS
+        token: 2365399641-g5Qxkk8p5RfvoAspaFEAVCUs1akVD1TbWTAF6TS
+        token_secret: TVwswAE8nhBuKN0XDZmm3a3wpPd3BOCWd9juGfttv5P8O

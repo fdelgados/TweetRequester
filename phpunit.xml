@@ -23,16 +23,16 @@
         <server name="KERNEL_DIR" value="./app" />
     </php>
     <testsuites>
-        <testsuite name="SellApp Test suites">
-            <directory>./test</directory>
+        <testsuite name="TweetRequesterApi Test suites">
+            <directory>./tests</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true">
-            <directory>src/AppBundle</directory>
+            <directory>src/ApiBundle</directory>
             <exclude>
-                <directory>src/AppBundle/Infrastructure</directory>
+                <directory>src/ApiBundle/Infrastructure</directory>
             </exclude>
         </whitelist>
     </filter>

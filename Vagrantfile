@@ -25,10 +25,10 @@ end
 Vagrant.configure("2") do |config|
 
     config.vm.provider :virtualbox do |v|
-        v.name = "sellapp"
+        v.name = "tweetrequester"
         v.customize [
             "modifyvm", :id,
-            "--name", "vagrant.www.sellapp.dev",
+            "--name", "tweetrequester",
             "--memory", 1024,
             "--natdnshostresolver1", "on",
             "--cpus", 1,
@@ -36,8 +36,8 @@ Vagrant.configure("2") do |config|
     end
 
     config.vm.box = "ubuntu/trusty64"
-
-    config.vm.network :private_network, ip: "192.168.33.100"
+    
+    config.vm.network :private_network, ip: "192.168.33.102"
     config.ssh.forward_agent = true
 
     # If ansible is in your path it will provision from your HOST machine
@@ -49,8 +49,9 @@ Vagrant.configure("2") do |config|
             ansible.limit = 'all'
         end
     else
-        config.vm.provision :shell, path: "ansible/windows.sh", args: ["vagrant.www.sellapp.dev"]
+        config.vm.provision :shell, path: "ansible/windows.sh", args: ["tweetrequester"]
     end
 
-    config.vm.synced_folder "./", "/vagrant", type: "rsync", rsync__exclude: [".git/", "app/cache/", "app/logs/"]
+    config.vm.synced_folder './', '/vagrant', disabled: true
+    config.vm.synced_folder './', '/var/www', type: 'rsync', owner: 'www-data', group: 'www-data', rsync__auto: true, rsync__exclude: %w(.git/ .vagrant/ .idea/ app/cache/ app/logs/ tests/), rsync__args: %w(-azv --delete)
 end

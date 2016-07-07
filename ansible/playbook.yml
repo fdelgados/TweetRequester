@@ -7,7 +7,7 @@
     - server
     - vagrant_local
     - nginx
-    - sqlite
+    - redis
     - php
     - xdebug
     - composer
