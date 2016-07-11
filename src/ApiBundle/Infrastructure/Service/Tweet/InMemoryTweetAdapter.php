@@ -38,7 +38,8 @@ class InMemoryTweetAdapter implements TweetAdapter
      * @param int $length
      * @return string
      */
-    private function generateRandomString($length = 140) {
+    private function generateRandomString($length = 140)
+    {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $randomString = '';
