@@ -15,5 +15,10 @@ interface TweetCache
      * @return Tweet[]|null
      */
     public function get($username);
+
+    /**
+     * @param string $username
+     */
+    public function delete($username);
 }
 
