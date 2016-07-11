@@ -29,7 +29,7 @@ class InMemoryTweetAdapter implements TweetAdapter
         $tweet = new \stdClass();
         $tweet->id_str = strval(10001 + $index);
         $tweet->text = $this->generateRandomString();
-        $tweet->created_at = new \DateTime();
+        $tweet->created_at = (new \DateTime())->format('Y-m-d H:i:s');
         $this->tweets[$username][$index] = $tweet;
     }
 
