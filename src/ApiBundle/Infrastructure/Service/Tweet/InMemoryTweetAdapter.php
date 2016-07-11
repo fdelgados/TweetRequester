@@ -18,7 +18,8 @@ class InMemoryTweetAdapter implements TweetAdapter
     public function transformToTweets($username)
     {
         if (isset($this->tweets[$username])) {
-            return $this->tweets[$username];
+            $tweetTranslator = new TweetsTranslator();
+            return $tweetTranslator->translateFromApiResponse($this->tweets[$username]);
         }
         return [];
     }
