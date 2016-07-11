@@ -4,6 +4,7 @@ namespace ApiBundle\Application\Service\Tweet;
 
 use ApiBundle\Application\Service\ApplicationService;
 use ApiBundle\Application\Service\ApplicationServiceRequest;
+use ApiBundle\Domain\Model\Tweet\Tweet;
 use ApiBundle\Domain\Service\Tweet\TweetGetter;
 
 class GetLatestTweetsService implements ApplicationService
@@ -25,7 +26,13 @@ class GetLatestTweetsService implements ApplicationService
         $username = $request->username();
 
         try {
-            $tweets = $this->tweetGetter->latestFromUser($username);
+            $tweets = array_map(function (Tweet $tweet) {
+                return [
+                    'id' => $tweet->id(),
+                    'text' => $tweet->text(),
+                    'created_at' => $tweet->createdAt()->format('d-m-Y H:i')
+                ];
+            }, $this->tweetGetter->latestFromUser($username));
         } catch (\Exception $e) {
             return new GetLatestTweetsResponse(false, $username, [], $e->getMessage());
         }
