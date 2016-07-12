@@ -18,7 +18,8 @@ class InMemoryTweetAdapter implements TweetAdapter
     public function transformToTweets($username)
     {
         if (isset($this->tweets[$username])) {
-            return $this->tweets[$username];
+            $tweetTranslator = new TweetsTranslator();
+            return $tweetTranslator->translateFromApiResponse($this->tweets[$username]);
         }
         return [];
     }
@@ -28,7 +29,7 @@ class InMemoryTweetAdapter implements TweetAdapter
         $tweet = new \stdClass();
         $tweet->id_str = strval(10001 + $index);
         $tweet->text = $this->generateRandomString();
-        $tweet->created_at = new \DateTime();
+        $tweet->created_at = (new \DateTime())->format('Y-m-d H:i:s');
         $this->tweets[$username][$index] = $tweet;
     }
 
@@ -37,7 +38,8 @@ class InMemoryTweetAdapter implements TweetAdapter
      * @param int $length
      * @return string
      */
-    private function generateRandomString($length = 140) {
+    private function generateRandomString($length = 140)
+    {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $randomString = '';

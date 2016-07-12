@@ -44,4 +44,15 @@ class RedisCache implements TweetCache
 
         return null;
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function delete($username)
+    {
+        $username = md5($username);
+        if ($this->redis->exists($username)) {
+            return unserialize($this->redis->del($username));
+        }
+    }
 }

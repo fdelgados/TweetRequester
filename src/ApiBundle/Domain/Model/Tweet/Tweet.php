@@ -2,7 +2,7 @@
 
 namespace ApiBundle\Domain\Model\Tweet;
 
-class Tweet implements \JsonSerializable
+class Tweet
 {
     /** @var  string */
     private $id;
@@ -42,13 +42,5 @@ class Tweet implements \JsonSerializable
     public function createdAt()
     {
         return $this->createdAt;
-    }
-
-    /**
-     * @return array
-     */
-    public function jsonSerialize()
-    {
-        return get_object_vars($this);
     }
 }
