@@ -3,7 +3,6 @@
 namespace ApiBundle\Application\Service\Tweet;
 
 use ApiBundle\Application\Service\ApplicationServiceResponse;
-use ApiBundle\Domain\Model\Tweet\Tweet;
 
 class GetLatestTweetsResponse implements ApplicationServiceResponse
 {
@@ -13,7 +12,7 @@ class GetLatestTweetsResponse implements ApplicationServiceResponse
     /** @var string */
     private $username;
 
-    /** @var Tweet[] */
+    /** @var array */
     private $tweets = [];
 
     /** @var string */
@@ -36,7 +35,7 @@ class GetLatestTweetsResponse implements ApplicationServiceResponse
     }
 
     /**
-     * @return Tweet[]
+     * @return array
      */
     public function tweets()
     {
